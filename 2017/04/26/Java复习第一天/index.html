@@ -1,0 +1,1191 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="java," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="Java复习第一天">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java复习第一天">
+<meta property="og:url" content="http://yoursite.com/2017/04/26/Java复习第一天/index.html">
+<meta property="og:site_name" content="幸运儿、">
+<meta property="og:description" content="Java复习第一天">
+<meta property="og:updated_time" content="2017-04-25T16:55:55.188Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java复习第一天">
+<meta name="twitter:description" content="Java复习第一天">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6376107827278120000',
+      author: '小樊同学'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/04/26/Java复习第一天/"/>
+
+
+
+
+
+  <title> Java复习第一天 | 幸运儿、 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">幸运儿、</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">对这个世界毫无贡献</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/26/Java复习第一天/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="小樊同学">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="幸运儿、">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="幸运儿、" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Java复习第一天
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-26T00:55:14+08:00">
+                2017-04-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/26/Java复习第一天/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/26/Java复习第一天/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+              <div class="post-description">
+                  Java复习第一天
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>###01.01_Java语言基础(常量的概述和使用)</p>
+<ul>
+<li>A:什么是常量<ul>
+<li>在程序执行的过程中其值不可以发生改变 </li>
+</ul>
+</li>
+<li>B:Java中常量的分类<ul>
+<li>字面值常量</li>
+<li>自定义常量(面向对象部分讲) </li>
+</ul>
+</li>
+<li>C:字面值常量的分类<ul>
+<li>字符串常量    用双引号括起来的内容</li>
+<li>整数常量        所有整数</li>
+<li>小数常量        所有小数</li>
+<li>字符常量        用单引号括起来的内容,里面只能放单个数字,单个字母或单个符号</li>
+<li>布尔常量        较为特殊，只有true和false</li>
+<li>空常量            null(数组部分)</li>
+</ul>
+</li>
+<li><p>D:案例演示</p>
+<ul>
+<li><p>用输出语句输出各种常量。null不演示</p>
+<pre><code>* 字符串常量    用双引号括起来的内容
+* 整数常量        所有整数
+* 小数常量        所有小数
+* 字符常量        用单引号括起来的内容,里面只能放单个数字,单个字母或单个符号
+* 布尔常量        较为特殊，只有true和false
+* 空常量            null(数组部分讲解)
+
+System.out.println(&quot;abc&quot;);        //字符串常量
+   System.out.println(123);        //整数常量
+   System.out.println(12.3);        //小数常量
+ //System.out.println(&apos;10&apos;);        //&apos;&apos;中必须放的是单个字符,10代表的是1字符和0字符
+//System.out.println(&apos;&apos;);        //&apos;&apos;中什么也不放,也是不可以的,因为代表不了任何字符
+   System.out.println(&apos; &apos;);        //带表空格字符
+System.out.println(true);        //boolean类只有两个值,true和false
+System.out.println(false);
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<p>###01.02_Java语言基础(进制概述和二,八,十六进制图解)</p>
+<ul>
+<li>A:什么是进制<ul>
+<li>进制：就是进位制，是人们规定的一种进位方法。 对于任何一种进制–X进制，就表示某一位置上的数运算时是逢X进一位。二进制就是逢二进一，八进制是逢八进一，十进制是逢十进一，十六进制是逢十六进一。</li>
+<li>例如一周有七天,七进制,一年有十二个月,十二进制</li>
+</ul>
+</li>
+<li>B:十进制的由来 <ul>
+<li>十进制的由来是因为人类有十个手指 </li>
+</ul>
+</li>
+<li>C:二进制的由来<ul>
+<li>其实二进制来源与中国,请看史料记载</li>
+<li>18世纪德国数理哲学大师莱布尼兹从他的传教士朋友鲍威特寄给他的拉丁文译本《易经》中，读到了八卦的组成结构，惊奇地发现其基本素数（0）（1），即《易经》的阴爻yao- -和__阳爻，其进位制就是二进制，并认为这是世界上数学进制中最先进的。20世纪被称作第三次科技革命的重要标志之一的计算机的发明与应用，其运算模式正是二进制。它不但证明了莱布尼兹的原理是正确的，同时也证明了《易经》数理学是很了不起的。</li>
+</ul>
+</li>
+<li>D:八进制的由来<ul>
+<li>任何数据在计算机中都是以二进制的形式存在的。二进制早期由电信号开关演变而来。一个整数在内存中一样也是二进制的，但是使用一大串的1或者0组成的数值进行使用很麻烦。 </li>
+<li>所以就想把一大串缩短点，将二进制中的三位用一位表示。这三位可以取到的最大值就是7.超过7就进位了，这就是八进制。 </li>
+</ul>
+</li>
+<li>E:十六进制的由来<ul>
+<li>但是对于过长的二进制变成八进制还是较长，所以出现的用4个二进制位表示一位的情况，四个二进制位最大是15，这就是十六进制。</li>
+</ul>
+</li>
+<li>F:不同进制表现同一个数据的形式特点<ul>
+<li>进制越大，表现形式越短</li>
+</ul>
+</li>
+<li><p>G:案例显示</p>
+<ul>
+<li><p>进制显示</p>
+<pre><code>0b100  表示的是2进制
+0100   表示的是8进制
+100    表示的是10进制
+0x100  表示的是16进制
+    System.out.println(0b100);  //4?    二进制表示形式前面加0b(b可以大写也可以小写)
+System.out.println(0100);       //64?    八进制表示形式前面加0
+   System.out.println(100);
+   System.out.println(0x100);  //256?    十六进制表示形式前面加0x(可以大写也可以小写)
+</code></pre><p>###01.03_Java语言基础(原码反码补码)</p>
+</li>
+</ul>
+</li>
+<li>A:为什么要学习原码反码补码?<ul>
+<li>后面要学习强制类型转换,如果不知道有原反补会看不懂结果 </li>
+</ul>
+</li>
+<li>B:有符号数据表示法的几种方式<ul>
+<li>原码<ul>
+<li>就是二进制定点表示法，即最高位为符号位，“0”表示正，“1”表示负，其余位表示数值的大小。</li>
+<li>通过一个字节,也就是8个二进制位表示+7和-7</li>
+<li>0(符号位)    0000111</li>
+<li>1(符号位)    0000111</li>
+</ul>
+</li>
+<li>反码<ul>
+<li>正数的反码与其原码相同；负数的反码是对其原码逐位取反，但符号位除外。</li>
+</ul>
+</li>
+<li>补码<ul>
+<li>正数的补码与其原码相同；负数的补码是在其反码的末位加1。<br>###01.04_Java语言基础(数据类型的概述和分类)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A:为什么有数据类型<ul>
+<li>Java语言是强类型语言，对于每一种数据都定义了明确的具体数据类型，在内存中分配了不同大小的内存空间</li>
+</ul>
+</li>
+<li>B:Java中数据类型的分类<ul>
+<li>基本数据类型</li>
+<li>引用数据类型 <ul>
+<li>面向对象部分讲解 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>C:基本数据类型分类(4类8种) </p>
+<ul>
+<li>整数型<ul>
+<li>byte 占一个字节  -128到127</li>
+<li>short 占两个字  -2^15~2^15-1</li>
+<li>int 占四个字节 -2^31~2^31-1</li>
+<li>long 占八个字节 -2^63~2^63-1</li>
+</ul>
+</li>
+<li>浮点型<ul>
+<li>float 占四个字节 -3.403E38~3.403E38  单精度</li>
+<li>double 占八个字节-1.798E308~1.798E308 双精度</li>
+</ul>
+</li>
+<li>字符型<ul>
+<li>char 占两个字节 0~65535</li>
+</ul>
+</li>
+<li><p>布尔型</p>
+<ul>
+<li>boolean   <ul>
+<li>boolean理论上是占八分之一个字节,因为一个开关就可以决定是true和false了,但是java中boolean类型没有明确指定他的大小 </li>
+</ul>
+</li>
+</ul>
+<p>//整数类型</p>
+<p>  //整数类型<br>  byte b = 10;            //占一个字节,-128 到 127<br>  short s = 20;            //占两个字节<br>  int i = 30;                //占四个字节            整数默认的数据类型就是int类型<br>  long x = 8888888888L;    //占八个字节    如果long类型后面加L进行标识最好加大L,因为小l太像一了<br>  System.out.println(b);<br>  System.out.println(s);<br>  System.out.println(i);<br>  System.out.println(x);<br>  System.out.println(12345 + 5432l);</p>
+<p>  //浮点类型<br>  float f = 12.3F;        //占四个字节<br>  double d = 33.4;        //占八个字节            小数默认的数据类型是double,double类型后面也可以用D或d标识,但是一般不加<br>  System.out.println(f);<br>  System.out.println(d);</p>
+<p>  //字符类型<br>  char c = ‘a’;            //占两个字节<br>  System.out.println(c);</p>
+<p>  //布尔类型<br>  boolean b1 = true;<br>  boolean b2 = false;<br>  System.out.println(b1);<br>  System.out.println(b2);<br>###01.05_Java语言基础(数据类型转换之隐式转换)</p>
+</li>
+</ul>
+</li>
+<li>A:案例演示<ul>
+<li>a:int + int</li>
+<li>b:byte + int </li>
+</ul>
+</li>
+<li>B:Java中的默认转换规则<ul>
+<li>取值范围小的数据类型与取值范围大的数据类型进行运算,会先将小的数据类型提升为大的,再运算 </li>
+</ul>
+</li>
+<li>C:画图解释byte+int类型的问题<br>###01.06_Java语言基础(数据类型转换之强制转换)</li>
+<li>A:强制转换问题<ul>
+<li>int a = 10;</li>
+<li>byte b = 20; </li>
+<li>b = a + b;</li>
+</ul>
+</li>
+<li>B:强制转换的格式<ul>
+<li>b = (byte)(a + b); </li>
+</ul>
+</li>
+<li><p>C:强制转换的注意事项</p>
+<ul>
+<li><p>如果超出了被赋值的数据类型的取值范围得到的结果会与你期望的结果不同</p>
+<p>代码示例:</p>
+<p>  byte b = (byte) (126 + 4);<br>  System.out.println(b); // 结果是-126<br>  //00000000 00000000 00000001 10000010  130的int类型<br>  //强制转换以后 变成 10000010 byte类型<br>  //然后计算机都是以补码来计算的 补码为:11111110<br>  System.out.println(“直接强转的结果:”+0b10000010);<br>  System.out.println(“-“+0b1111110);//最高位符号位不输入</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>byte bb = (byte) 300;
+System.out.println(bb);// 结果44
+//00000000 00000000 00000001 00101100
+//00101100 强转以后 显示为正数
+//00101100 求补码以后为原来
+System.out.println(0b00101100);
+
+
+
+
+//面试题:看下面的程序是否有问题，如果有问题，请指出并说明理由。
+byte b1 = 3;
+byte b2 = 4;
+//byte b3 = b1 + b2;
+/*
+从两方面
+1,byte与byte(或short,char)进行运算的时候会提升为int,两个int类型相加的结果也是int类型
+2,b1和b2是两个变量,变量存储的值是变化,在编译的时候无法判断里面具体的值,相加有可能会超出byte的取值范围
+*/
+//System.out.println(b3);
+//byte b4 = 3 + 4;            //java编译器有常量优化机制
+byte b4 = 7;
+System.out.println(b4);
+</code></pre><p>###01.07_Java语言基础(字符和字符串参与运算)</p>
+<ul>
+<li><p>A:案例演示</p>
+<ul>
+<li>System.out.println(‘a’);</li>
+<li><p>System.out.println(‘a’+1);</p>
+</li>
+<li><p>通过看结果知道’a’的值是多少,由此引出ASCII码表</p>
+</li>
+</ul>
+</li>
+<li>B:ASCII码表的概述<ul>
+<li>记住三个值：<ul>
+<li>‘0’  48</li>
+<li>‘A’  65</li>
+<li>‘a’  97</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>C:案例演示<ul>
+<li>System.out.println(“hello”+’a’+1);</li>
+<li>System.out.println(‘a’+1+”hello”);</li>
+</ul>
+</li>
+<li>D:+在有字符串参与中被称为字符串连接符<ul>
+<li>System.out.println(“5+5=”+5+5);</li>
+<li>System.out.println(5+5+”=5+5”);<br>###01.08_Java语言基础(char数据类型)</li>
+</ul>
+</li>
+<li>A:char c = 97;    0到65535</li>
+<li>B:Java语言中的字符char可以存储一个中文汉字吗?为什么呢?<ul>
+<li>可以。因为Java语言采用的是Unicode编码。Unicode编码中的每个字符占用两个字节。中文也是占的两个字节</li>
+<li>所以，Java中的字符可以存储一个中文汉字</li>
+</ul>
+</li>
+</ul>
+<p>###03.01_Java语言基础(逻辑运算符的基本用法)</p>
+<ul>
+<li>A:逻辑运算符有哪些<ul>
+<li>&amp;,|,^,!</li>
+<li>&amp;&amp;,|| </li>
+</ul>
+</li>
+<li>B:案例演示</li>
+<li><p>逻辑运算符的基本用法</p>
+</li>
+<li><p>注意事项：</p>
+<ul>
+<li>a:逻辑运算符一般用于连接boolean类型的表达式或者值。</li>
+<li>b:表达式：就是用运算符把常量或者变量连接起来的符合java语法的式子。<ul>
+<li>算术表达式：a + b</li>
+<li>比较表达式：a == b(条件表达式)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>C:结论：</li>
+<li>&amp;逻辑与:有false则false。</li>
+<li>|逻辑或:有true则true。</li>
+<li>^逻辑异或:相同为false，不同为true。</li>
+<li><p>!逻辑非:非false则true，非true则false。</p>
+<ul>
+<li><p>特点：偶数个不改变本身。</p>
+<p> //&amp;,|,^,!</p>
+<p>  //int x = 10;<br>  //5 &lt; x &lt; 15<br>  //x &gt; 5 &amp; x &lt; 15<br>  //逻辑与 &amp; 并且and 遇false则false<br>  int a = 10;<br>  int b = 20;<br>  int c = 30;<br>  /<em>System.out.println(a &lt; b &amp; b &lt; c);            //true &amp; true = true<br>  System.out.println(a &lt; b &amp; b &gt; c);                //true &amp; false = false<br>  System.out.println(a &gt; b &amp; b &lt; c);                //false &amp; true = false<br>  System.out.println(a &gt; b &amp; b &gt; c);                //false &amp; false = false</em>/</p>
+<p>  //逻辑或 或or 遇true则true<br>  /<em>System.out.println(a &lt; b | b &lt; c);                //true | true = true<br>  System.out.println(a &lt; b | b &gt; c);                //true | false = true<br>  System.out.println(a &gt; b | b &lt; c);                //false | true = true<br>  System.out.println(a &gt; b | b &gt; c);                //false | flase = false</em>/</p>
+<p>  //逻辑异或 ^ 两边相同为false,两边不同为true<br>  /<em>System.out.println(a &lt; b ^ b &lt; c);                //true | true = false<br>  System.out.println(a &lt; b ^ b &gt; c);                //true | false = true<br>  System.out.println(a &gt; b ^ b &lt; c);                //false | true = true<br>  System.out.println(a &gt; b ^ b &gt; c);                //false | flase = false</em>/</p>
+<p>  //逻辑非!<br>  System.out.println(!true);<br>  System.out.println(!!true);<br>###03.02_Java语言基础(逻辑运算符&amp;&amp;和&amp;的区别)</p>
+</li>
+</ul>
+</li>
+<li>A:案例演示<ul>
+<li>&amp;&amp;和&amp;的区别?  短路与<ul>
+<li>a:最终结果一样。</li>
+<li>b:&amp;&amp;具有短路效果。左边是false，右边不执行。</li>
+<li>&amp;是无论左边是false还是true,右边都会执行</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>B:同理||和|的区别?</li>
+<li><p>C:开发中常用谁?</p>
+<ul>
+<li><p>&amp;&amp;,||,!</p>
+<p>代码</p>
+<p>  int a = 10;<br>  int b = 20;<br>  int c = 30;<br>  System.out.println(a &lt; b &amp;&amp; b &lt; c);                //true &amp;&amp; true = true<br>  System.out.println(a &lt; b &amp;&amp; b &gt; c);                //true &amp;&amp; false = false<br>  System.out.println(a &gt; b &amp;&amp; b &lt; c);                //false &amp;&amp; true = false<br>  System.out.println(a &gt; b &amp;&amp; b &gt; c);                //false &amp;&amp; false = false*/</p>
+<p>  int x = 3;<br>  int y = 4;<br>  //System.out.println((++x == 3) &amp; (++y == 4));    //false &amp; false = false<br>  //System.out.println(“x = “ + x);                    //x = 4<br>  //System.out.println(“y = “ + y);                    //y = 5<br>  System.out.println(“—————————“);<br>  System.out.println((++x == 3) &amp;&amp; (++y == 4));    //false &amp; false = false<br>  System.out.println(“x = “ + x);                    //x = 4<br>  System.out.println(“y = “ + y);                    //y = 4<br>###03.03_Java语言基础(位运算符的基本用法1)(了解)</p>
+</li>
+</ul>
+</li>
+<li>A:位运算符有哪些<ul>
+<li>&amp;,|,^,~ ,&gt;&gt;,&gt;&gt;&gt;,&lt;&lt;</li>
+</ul>
+</li>
+<li><p>B:案例演示</p>
+<ul>
+<li><p>位运算符的基本用法1</p>
+</li>
+<li><p>&amp;,|,^,~ 的用法</p>
+</li>
+<li>&amp;:有0则0</li>
+<li>|:有1则1</li>
+<li>^:相同则0，不同则1</li>
+<li>~:按位取反</li>
+</ul>
+</li>
+</ul>
+<p>位运算代码:</p>
+<pre><code>    * &amp;,|,^,~ 的用法
+    * &amp;:有0则0
+    * |:有1则1
+    * ^:相同则0，不同则1
+    * ~:按位取反
+    */
+
+    System.out.println(6 &amp; 3);                //2
+    System.out.println(6 | 3);                //7
+    System.out.println(6 ^ 3);                //5    
+    System.out.println(~6);                    //-7?
+    /*
+    110
+&amp;    011
+-----------
+    010
+
+    110
+|    011
+-----------
+      111
+
+    110
+^    011
+-----------
+    101
+
+    00000000 00000000 00000000 00000110        6的原码反码补码都是本身
+    11111111 11111111 11111111 11111001        对6取反
+-    00000000 00000000 00000000 00000001
+---------------------------------------
+    11111111 11111111 11111111 11111000        反码
+    10000000 00000000 00000000 00000111        原码(-7)
+</code></pre><p>###03.04_Java语言基础(位异或运算符的特点及面试题)</p>
+<ul>
+<li><p>A:案例演示</p>
+<ul>
+<li><p>位异或运算符的特点</p>
+</li>
+<li><p>^的特点：一个数据对另一个数据位异或两次，该数本身不变。</p>
+</li>
+</ul>
+</li>
+<li><p>B:面试题：</p>
+<ul>
+<li>请自己实现两个整数变量的交换</li>
+<li>注意：以后讲课的过程中，我没有明确指定数据的类型，默认int类型。</li>
+</ul>
+</li>
+</ul>
+<p>代码:</p>
+<pre><code>* 位异或运算符的特点
+
+* ^的特点：一个数据对另一个数据位异或两次，该数本身不变。
+*/
+
+//System.out.println(5 ^ 10 ^ 10);
+//System.out.println(5 ^ 10 ^ 5);
+
+/*
+* 请自己实现两个整数变量的交换(不需要定义第三方变量)
+* 注意：以后讲课的过程中，我没有明确指定数据的类型，默认int类型。
+*/
+
+int x = 10;
+int y = 5;
+
+//需要第三方变量,开发推荐用这种
+/*int temp;
+temp = x;
+x = y;
+y = temp;*/
+
+//不需要定义第三方变量,有弊端,有可能会超出int的取值范围
+/*x = x + y;                //10 + 5 = 15
+y = x - y;                //15 - 5 = 10
+x = x - y;                //15 - 10 = 5*/
+
+//不需要第三方变量,通过^来做
+x = x ^ y;                // 10 ^ 5 
+y = x ^ y;                // 10 ^ 5 ^ 5    y = 10
+x = x ^ y;                // 10 ^ 5 ^ 10  x = 5
+
+System.out.println(&quot;x = &quot; + x + &quot;,y = &quot; + y);
+</code></pre><p>###03.05_Java语言基础(位运算符的基本用法2及面试题)</p>
+<ul>
+<li>A:案例演示 &gt;&gt;,&gt;&gt;&gt;,&lt;&lt;的用法:<ul>
+<li>&lt;&lt;:左移    左边最高位丢弃，右边补齐0</li>
+<li><blockquote>
+<blockquote>
+<p>:右移    最高位是0，左边补齐0;最高为是1，左边补齐1</p>
+</blockquote>
+</blockquote>
+</li>
+<li><blockquote>
+<blockquote>
+<blockquote>
+<p>:无符号右移 无论最高位是0还是1，左边补齐0</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+<li>最有效率的算出2 * 8的结果    </li>
+</ul>
+</li>
+</ul>
+<p>代码如下:</p>
+<pre><code>    *  &lt;&lt;:左移    左边最高位丢弃，右边补齐0
+    *  &gt;&gt;:右移    最高位是0，左边补齐0;最高为是1，左边补齐1
+    *  &gt;&gt;&gt;:无符号右移 无论最高位是0还是1，左边补齐0
+    *  最有效率的算出2 * 8的结果
+    */
+
+    //左移,向左移动几位就是乘以2的几次幂
+    //System.out.println(12 &lt;&lt; 1);        //24
+    //System.out.println(12 &lt;&lt; 2);        //48
+
+    /*
+    00000000 00000000 00000000 00001100        12的补码
+ (0)0000000 00000000 00000000 000011000        24的补码
+(00)000000 00000000 00000000 0000110000        48的补码
+    */
+
+    //右移,向右移动几位就是除以2的几次幂
+    //System.out.println(12 &gt;&gt; 1);
+    //System.out.println(12 &gt;&gt; 2);
+
+    /*
+    00000000 00000000 00000000 00001100        12的补码
+    000000000 00000000 00000000 0000110(0)    6
+    0000000000 00000000 00000000 000011(00) 3
+    */
+
+    //最有效率的算出2 * 8的结果
+    System.out.println(2 &lt;&lt; 3);    
+</code></pre><p>###03.06_Java语言基础(三元运算符的基本用法)</p>
+<ul>
+<li>A:三元运算符的格式</li>
+<li>(关系表达式) ? 表达式1 : 表达式2;</li>
+<li>B:三元运算符的执行流程 </li>
+<li>C:案例演示<ul>
+<li>获取两个数中的最大值</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/15/她是我无法忘记的女孩/" rel="next" title="她是我无法忘记的女孩">
+                <i class="fa fa-chevron-left"></i> 她是我无法忘记的女孩
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2017/04/26/Java复习第一天/"
+     data-title="Java复习第一天"
+     data-content=""
+     data-url="http://yoursite.com/2017/04/26/Java复习第一天/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/04/26/Java复习第一天/"
+           data-title="Java复习第一天" data-url="http://yoursite.com/2017/04/26/Java复习第一天/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="小樊同学" />
+          <p class="site-author-name" itemprop="name">小樊同学</p>
+          <p class="site-description motion-element" itemprop="description">我不管,我最帅哈哈哈哈哈</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/fanhc" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/201253404?refer_flag=1001030201_&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小樊同学</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"fanhc"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
