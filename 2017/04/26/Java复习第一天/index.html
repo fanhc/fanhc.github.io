@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/04/26/Java复习第一天/index.html">
 <meta property="og:site_name" content="幸运儿、">
 <meta property="og:description" content="Java复习第一天">
-<meta property="og:updated_time" content="2017-04-25T16:55:55.188Z">
+<meta property="og:updated_time" content="2017-04-25T17:08:13.496Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java复习第一天">
 <meta name="twitter:description" content="Java复习第一天">
@@ -371,8 +371,7 @@
       
 
       
-        <p>###01.01_Java语言基础(常量的概述和使用)</p>
-<ul>
+        <h2 id="Java复习第一天"><a href="#Java复习第一天" class="headerlink" title="Java复习第一天"></a>Java复习第一天</h2><h3 id="01-01-Java语言基础-常量的概述和使用"><a href="#01-01-Java语言基础-常量的概述和使用" class="headerlink" title="01.01_Java语言基础(常量的概述和使用)"></a>01.01_Java语言基础(常量的概述和使用)</h3><ul>
 <li>A:什么是常量<ul>
 <li>在程序执行的过程中其值不可以发生改变 </li>
 </ul>
@@ -391,9 +390,12 @@
 <li>空常量            null(数组部分)</li>
 </ul>
 </li>
-<li><p>D:案例演示</p>
-<ul>
-<li><p>用输出语句输出各种常量。null不演示</p>
+<li>D:案例演示<ul>
+<li>用输出语句输出各种常量。null不演示</li>
+</ul>
+</li>
+</ul>
+<p>代码如下</p>
 <pre><code>* 字符串常量    用双引号括起来的内容
 * 整数常量        所有整数
 * 小数常量        所有小数
@@ -402,19 +404,14 @@
 * 空常量            null(数组部分讲解)
 
 System.out.println(&quot;abc&quot;);        //字符串常量
-   System.out.println(123);        //整数常量
-   System.out.println(12.3);        //小数常量
- //System.out.println(&apos;10&apos;);        //&apos;&apos;中必须放的是单个字符,10代表的是1字符和0字符
+System.out.println(123);        //整数常量
+System.out.println(12.3);        //小数常量
+//System.out.println(&apos;10&apos;);        //&apos;&apos;中必须放的是单个字符,10代表的是1字符和0字符
 //System.out.println(&apos;&apos;);        //&apos;&apos;中什么也不放,也是不可以的,因为代表不了任何字符
-   System.out.println(&apos; &apos;);        //带表空格字符
+System.out.println(&apos; &apos;);        //带表空格字符
 System.out.println(true);        //boolean类只有两个值,true和false
 System.out.println(false);
-</code></pre></li>
-</ul>
-</li>
-</ul>
-<p>###01.02_Java语言基础(进制概述和二,八,十六进制图解)</p>
-<ul>
+</code></pre><h3 id="01-02-Java语言基础-进制概述和二-八-十六进制图解"><a href="#01-02-Java语言基础-进制概述和二-八-十六进制图解" class="headerlink" title="01.02_Java语言基础(进制概述和二,八,十六进制图解)"></a>01.02_Java语言基础(进制概述和二,八,十六进制图解)</h3><ul>
 <li>A:什么是进制<ul>
 <li>进制：就是进位制，是人们规定的一种进位方法。 对于任何一种进制–X进制，就表示某一位置上的数运算时是逢X进一位。二进制就是逢二进一，八进制是逢八进一，十进制是逢十进一，十六进制是逢十六进一。</li>
 <li>例如一周有七天,七进制,一年有十二个月,十二进制</li>
@@ -442,21 +439,21 @@ System.out.println(false);
 <li>进制越大，表现形式越短</li>
 </ul>
 </li>
-<li><p>G:案例显示</p>
-<ul>
-<li><p>进制显示</p>
+<li>G:案例显示<ul>
+<li>进制显示</li>
+</ul>
+</li>
+</ul>
+<p>代码如下:</p>
 <pre><code>0b100  表示的是2进制
 0100   表示的是8进制
 100    表示的是10进制
 0x100  表示的是16进制
-    System.out.println(0b100);  //4?    二进制表示形式前面加0b(b可以大写也可以小写)
-System.out.println(0100);       //64?    八进制表示形式前面加0
-   System.out.println(100);
-   System.out.println(0x100);  //256?    十六进制表示形式前面加0x(可以大写也可以小写)
-</code></pre><p>###01.03_Java语言基础(原码反码补码)</p>
-</li>
-</ul>
-</li>
+   System.out.println(0b100);  //4?    二进制表示形式前面加0b(b可以大写也可以小写)
+   System.out.println(0100);       //64?    八进制表示形式前面加0
+System.out.println(100);
+System.out.println(0x100);  //256?    十六进制表示形式前面加0(可以大写也可以小写)
+</code></pre><h3 id="01-03-Java语言基础-原码反码补码"><a href="#01-03-Java语言基础-原码反码补码" class="headerlink" title="01.03_Java语言基础(原码反码补码)"></a>01.03_Java语言基础(原码反码补码)</h3><ul>
 <li>A:为什么要学习原码反码补码?<ul>
 <li>后面要学习强制类型转换,如果不知道有原反补会看不懂结果 </li>
 </ul>
@@ -474,7 +471,7 @@ System.out.println(0100);       //64?    八进制表示形式前面加0
 </ul>
 </li>
 <li>补码<ul>
-<li>正数的补码与其原码相同；负数的补码是在其反码的末位加1。<br>###01.04_Java语言基础(数据类型的概述和分类)</li>
+<li>正数的补码与其原码相同；负数的补码是在其反码的末位加1。 <h3 id="01-04-Java语言基础-数据类型的概述和分类"><a href="#01-04-Java语言基础-数据类型的概述和分类" class="headerlink" title="01.04_Java语言基础(数据类型的概述和分类)"></a>01.04_Java语言基础(数据类型的概述和分类)</h3></li>
 </ul>
 </li>
 </ul>
@@ -516,12 +513,12 @@ System.out.println(0100);       //64?    八进制表示形式前面加0
 </ul>
 </li>
 </ul>
-<p>//整数类型</p>
-<p>  //整数类型<br>  byte b = 10;            //占一个字节,-128 到 127<br>  short s = 20;            //占两个字节<br>  int i = 30;                //占四个字节            整数默认的数据类型就是int类型<br>  long x = 8888888888L;    //占八个字节    如果long类型后面加L进行标识最好加大L,因为小l太像一了<br>  System.out.println(b);<br>  System.out.println(s);<br>  System.out.println(i);<br>  System.out.println(x);<br>  System.out.println(12345 + 5432l);</p>
+<p>整数类型</p>
+<p>  byte b = 10;            //占一个字节,-128 到 127<br>  short s = 20;            //占两个字节<br>  int i = 30;                //占四个字节            整数默认的数据类型就是int类型<br>  long x = 8888888888L;    //占八个字节    如果long类型后面加L进行标识最好加大L,因为小l太像一了<br>  System.out.println(b);<br>  System.out.println(s);<br>  System.out.println(i);<br>  System.out.println(x);<br>  System.out.println(12345 + 5432l);</p>
 <p>  //浮点类型<br>  float f = 12.3F;        //占四个字节<br>  double d = 33.4;        //占八个字节            小数默认的数据类型是double,double类型后面也可以用D或d标识,但是一般不加<br>  System.out.println(f);<br>  System.out.println(d);</p>
 <p>  //字符类型<br>  char c = ‘a’;            //占两个字节<br>  System.out.println(c);</p>
-<p>  //布尔类型<br>  boolean b1 = true;<br>  boolean b2 = false;<br>  System.out.println(b1);<br>  System.out.println(b2);<br>###01.05_Java语言基础(数据类型转换之隐式转换)</p>
-</li>
+<p>  //布尔类型<br>  boolean b1 = true;<br>  boolean b2 = false;<br>  System.out.println(b1);<br>  System.out.println(b2);</p>
+<h3 id="01-05-Java语言基础-数据类型转换之隐式转换"><a href="#01-05-Java语言基础-数据类型转换之隐式转换" class="headerlink" title="01.05_Java语言基础(数据类型转换之隐式转换)"></a>01.05_Java语言基础(数据类型转换之隐式转换)</h3></li>
 </ul>
 </li>
 <li>A:案例演示<ul>
@@ -533,7 +530,7 @@ System.out.println(0100);       //64?    八进制表示形式前面加0
 <li>取值范围小的数据类型与取值范围大的数据类型进行运算,会先将小的数据类型提升为大的,再运算 </li>
 </ul>
 </li>
-<li>C:画图解释byte+int类型的问题<br>###01.06_Java语言基础(数据类型转换之强制转换)</li>
+<li>C:画图解释byte+int类型的问题<h3 id="01-06-Java语言基础-数据类型转换之强制转换"><a href="#01-06-Java语言基础-数据类型转换之强制转换" class="headerlink" title="01.06_Java语言基础(数据类型转换之强制转换)"></a>01.06_Java语言基础(数据类型转换之强制转换)</h3></li>
 <li>A:强制转换问题<ul>
 <li>int a = 10;</li>
 <li>byte b = 20; </li>
@@ -576,8 +573,7 @@ byte b2 = 4;
 //byte b4 = 3 + 4;            //java编译器有常量优化机制
 byte b4 = 7;
 System.out.println(b4);
-</code></pre><p>###01.07_Java语言基础(字符和字符串参与运算)</p>
-<ul>
+</code></pre><h3 id="01-07-Java语言基础-字符和字符串参与运算"><a href="#01-07-Java语言基础-字符和字符串参与运算" class="headerlink" title="01.07_Java语言基础(字符和字符串参与运算)"></a>01.07_Java语言基础(字符和字符串参与运算)</h3><ul>
 <li><p>A:案例演示</p>
 <ul>
 <li>System.out.println(‘a’);</li>
@@ -603,7 +599,7 @@ System.out.println(b4);
 </li>
 <li>D:+在有字符串参与中被称为字符串连接符<ul>
 <li>System.out.println(“5+5=”+5+5);</li>
-<li>System.out.println(5+5+”=5+5”);<br>###01.08_Java语言基础(char数据类型)</li>
+<li>System.out.println(5+5+”=5+5”);<h3 id="01-08-Java语言基础-char数据类型"><a href="#01-08-Java语言基础-char数据类型" class="headerlink" title="01.08_Java语言基础(char数据类型)"></a>01.08_Java语言基础(char数据类型)</h3></li>
 </ul>
 </li>
 <li>A:char c = 97;    0到65535</li>
@@ -613,8 +609,7 @@ System.out.println(b4);
 </ul>
 </li>
 </ul>
-<p>###03.01_Java语言基础(逻辑运算符的基本用法)</p>
-<ul>
+<h3 id="03-01-Java语言基础-逻辑运算符的基本用法"><a href="#03-01-Java语言基础-逻辑运算符的基本用法" class="headerlink" title="03.01_Java语言基础(逻辑运算符的基本用法)"></a>03.01_Java语言基础(逻辑运算符的基本用法)</h3><ul>
 <li>A:逻辑运算符有哪些<ul>
 <li>&amp;,|,^,!</li>
 <li>&amp;&amp;,|| </li>
@@ -639,15 +634,38 @@ System.out.println(b4);
 <li>^逻辑异或:相同为false，不同为true。</li>
 <li><p>!逻辑非:非false则true，非true则false。</p>
 <ul>
-<li><p>特点：偶数个不改变本身。</p>
-<p> //&amp;,|,^,!</p>
-<p>  //int x = 10;<br>  //5 &lt; x &lt; 15<br>  //x &gt; 5 &amp; x &lt; 15<br>  //逻辑与 &amp; 并且and 遇false则false<br>  int a = 10;<br>  int b = 20;<br>  int c = 30;<br>  /<em>System.out.println(a &lt; b &amp; b &lt; c);            //true &amp; true = true<br>  System.out.println(a &lt; b &amp; b &gt; c);                //true &amp; false = false<br>  System.out.println(a &gt; b &amp; b &lt; c);                //false &amp; true = false<br>  System.out.println(a &gt; b &amp; b &gt; c);                //false &amp; false = false</em>/</p>
-<p>  //逻辑或 或or 遇true则true<br>  /<em>System.out.println(a &lt; b | b &lt; c);                //true | true = true<br>  System.out.println(a &lt; b | b &gt; c);                //true | false = true<br>  System.out.println(a &gt; b | b &lt; c);                //false | true = true<br>  System.out.println(a &gt; b | b &gt; c);                //false | flase = false</em>/</p>
-<p>  //逻辑异或 ^ 两边相同为false,两边不同为true<br>  /<em>System.out.println(a &lt; b ^ b &lt; c);                //true | true = false<br>  System.out.println(a &lt; b ^ b &gt; c);                //true | false = true<br>  System.out.println(a &gt; b ^ b &lt; c);                //false | true = true<br>  System.out.println(a &gt; b ^ b &gt; c);                //false | flase = false</em>/</p>
-<p>  //逻辑非!<br>  System.out.println(!true);<br>  System.out.println(!!true);<br>###03.02_Java语言基础(逻辑运算符&amp;&amp;和&amp;的区别)</p>
-</li>
+<li>特点：偶数个不改变本身。</li>
 </ul>
-</li>
+<p>代码如下:    </p>
+<p>  //&amp;,|,^,!</p>
+<pre><code>//int x = 10;
+//5 &lt; x &lt; 15
+//x &gt; 5 &amp; x &lt; 15
+//逻辑与 &amp; 并且and 遇false则false
+int a = 10;
+int b = 20;
+int c = 30;
+/*System.out.println(a &lt; b &amp; b &lt; c);            //true &amp; true = true
+System.out.println(a &lt; b &amp; b &gt; c);                //true &amp; false = false
+System.out.println(a &gt; b &amp; b &lt; c);                //false &amp; true = false
+System.out.println(a &gt; b &amp; b &gt; c);                //false &amp; false = false*/
+
+//逻辑或 或or 遇true则true
+/*System.out.println(a &lt; b | b &lt; c);                //true | true = true
+System.out.println(a &lt; b | b &gt; c);                //true | false = true
+System.out.println(a &gt; b | b &lt; c);                //false | true = true
+System.out.println(a &gt; b | b &gt; c);                //false | flase = false*/
+
+//逻辑异或 ^ 两边相同为false,两边不同为true
+/*System.out.println(a &lt; b ^ b &lt; c);                //true | true = false
+System.out.println(a &lt; b ^ b &gt; c);                //true | false = true
+System.out.println(a &gt; b ^ b &lt; c);                //false | true = true
+System.out.println(a &gt; b ^ b &gt; c);                //false | flase = false*/
+
+//逻辑非!
+System.out.println(!true);
+System.out.println(!!true);
+</code></pre><h3 id="03-02-Java语言基础-逻辑运算符-amp-amp-和-amp-的区别"><a href="#03-02-Java语言基础-逻辑运算符-amp-amp-和-amp-的区别" class="headerlink" title="03.02_Java语言基础(逻辑运算符&amp;&amp;和&amp;的区别)"></a>03.02_Java语言基础(逻辑运算符&amp;&amp;和&amp;的区别)</h3></li>
 <li>A:案例演示<ul>
 <li>&amp;&amp;和&amp;的区别?  短路与<ul>
 <li>a:最终结果一样。</li>
@@ -663,8 +681,8 @@ System.out.println(b4);
 <li><p>&amp;&amp;,||,!</p>
 <p>代码</p>
 <p>  int a = 10;<br>  int b = 20;<br>  int c = 30;<br>  System.out.println(a &lt; b &amp;&amp; b &lt; c);                //true &amp;&amp; true = true<br>  System.out.println(a &lt; b &amp;&amp; b &gt; c);                //true &amp;&amp; false = false<br>  System.out.println(a &gt; b &amp;&amp; b &lt; c);                //false &amp;&amp; true = false<br>  System.out.println(a &gt; b &amp;&amp; b &gt; c);                //false &amp;&amp; false = false*/</p>
-<p>  int x = 3;<br>  int y = 4;<br>  //System.out.println((++x == 3) &amp; (++y == 4));    //false &amp; false = false<br>  //System.out.println(“x = “ + x);                    //x = 4<br>  //System.out.println(“y = “ + y);                    //y = 5<br>  System.out.println(“—————————“);<br>  System.out.println((++x == 3) &amp;&amp; (++y == 4));    //false &amp; false = false<br>  System.out.println(“x = “ + x);                    //x = 4<br>  System.out.println(“y = “ + y);                    //y = 4<br>###03.03_Java语言基础(位运算符的基本用法1)(了解)</p>
-</li>
+<p>  int x = 3;<br>  int y = 4;<br>  //System.out.println((++x == 3) &amp; (++y == 4));    //false &amp; false = false<br>  //System.out.println(“x = “ + x);                    //x = 4<br>  //System.out.println(“y = “ + y);                    //y = 5<br>  System.out.println(“—————————“);<br>  System.out.println((++x == 3) &amp;&amp; (++y == 4));    //false &amp; false = false<br>  System.out.println(“x = “ + x);                    //x = 4<br>  System.out.println(“y = “ + y);                    //y = 4</p>
+<h3 id="03-03-Java语言基础-位运算符的基本用法1-了解"><a href="#03-03-Java语言基础-位运算符的基本用法1-了解" class="headerlink" title="03.03_Java语言基础(位运算符的基本用法1)(了解)"></a>03.03_Java语言基础(位运算符的基本用法1)(了解)</h3></li>
 </ul>
 </li>
 <li>A:位运算符有哪些<ul>
@@ -718,8 +736,7 @@ System.out.println(b4);
 ---------------------------------------
     11111111 11111111 11111111 11111000        反码
     10000000 00000000 00000000 00000111        原码(-7)
-</code></pre><p>###03.04_Java语言基础(位异或运算符的特点及面试题)</p>
-<ul>
+</code></pre><h3 id="03-04-Java语言基础-位异或运算符的特点及面试题"><a href="#03-04-Java语言基础-位异或运算符的特点及面试题" class="headerlink" title="03.04_Java语言基础(位异或运算符的特点及面试题)"></a>03.04_Java语言基础(位异或运算符的特点及面试题)</h3><ul>
 <li><p>A:案例演示</p>
 <ul>
 <li><p>位异或运算符的特点</p>
@@ -769,8 +786,7 @@ y = x ^ y;                // 10 ^ 5 ^ 5    y = 10
 x = x ^ y;                // 10 ^ 5 ^ 10  x = 5
 
 System.out.println(&quot;x = &quot; + x + &quot;,y = &quot; + y);
-</code></pre><p>###03.05_Java语言基础(位运算符的基本用法2及面试题)</p>
-<ul>
+</code></pre><h3 id="03-05-Java语言基础-位运算符的基本用法2及面试题"><a href="#03-05-Java语言基础-位运算符的基本用法2及面试题" class="headerlink" title="03.05_Java语言基础(位运算符的基本用法2及面试题)"></a>03.05_Java语言基础(位运算符的基本用法2及面试题)</h3><ul>
 <li>A:案例演示 &gt;&gt;,&gt;&gt;&gt;,&lt;&lt;的用法:<ul>
 <li>&lt;&lt;:左移    左边最高位丢弃，右边补齐0</li>
 <li><blockquote>
@@ -820,8 +836,7 @@ System.out.println(&quot;x = &quot; + x + &quot;,y = &quot; + y);
 
     //最有效率的算出2 * 8的结果
     System.out.println(2 &lt;&lt; 3);    
-</code></pre><p>###03.06_Java语言基础(三元运算符的基本用法)</p>
-<ul>
+</code></pre><h3 id="03-06-Java语言基础-三元运算符的基本用法"><a href="#03-06-Java语言基础-三元运算符的基本用法" class="headerlink" title="03.06_Java语言基础(三元运算符的基本用法)"></a>03.06_Java语言基础(三元运算符的基本用法)</h3><ul>
 <li>A:三元运算符的格式</li>
 <li>(关系表达式) ? 表达式1 : 表达式2;</li>
 <li>B:三元运算符的执行流程 </li>
@@ -940,8 +955,17 @@ System.out.println(&quot;x = &quot; + x + &quot;,y = &quot; + y);
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -1017,6 +1041,22 @@ System.out.println(&quot;x = &quot; + x + &quot;,y = &quot; + y);
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java复习第一天"><span class="nav-number">1.</span> <span class="nav-text">Java复习第一天</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#01-01-Java语言基础-常量的概述和使用"><span class="nav-number">1.1.</span> <span class="nav-text">01.01_Java语言基础(常量的概述和使用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#01-02-Java语言基础-进制概述和二-八-十六进制图解"><span class="nav-number">1.2.</span> <span class="nav-text">01.02_Java语言基础(进制概述和二,八,十六进制图解)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#01-03-Java语言基础-原码反码补码"><span class="nav-number">1.3.</span> <span class="nav-text">01.03_Java语言基础(原码反码补码)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#01-04-Java语言基础-数据类型的概述和分类"><span class="nav-number">1.4.</span> <span class="nav-text">01.04_Java语言基础(数据类型的概述和分类)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#01-05-Java语言基础-数据类型转换之隐式转换"><span class="nav-number">1.5.</span> <span class="nav-text">01.05_Java语言基础(数据类型转换之隐式转换)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#01-06-Java语言基础-数据类型转换之强制转换"><span class="nav-number">1.6.</span> <span class="nav-text">01.06_Java语言基础(数据类型转换之强制转换)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#01-07-Java语言基础-字符和字符串参与运算"><span class="nav-number">1.7.</span> <span class="nav-text">01.07_Java语言基础(字符和字符串参与运算)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#01-08-Java语言基础-char数据类型"><span class="nav-number">1.8.</span> <span class="nav-text">01.08_Java语言基础(char数据类型)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-01-Java语言基础-逻辑运算符的基本用法"><span class="nav-number">1.9.</span> <span class="nav-text">03.01_Java语言基础(逻辑运算符的基本用法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-02-Java语言基础-逻辑运算符-amp-amp-和-amp-的区别"><span class="nav-number">1.10.</span> <span class="nav-text">03.02_Java语言基础(逻辑运算符&&和&的区别)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-03-Java语言基础-位运算符的基本用法1-了解"><span class="nav-number">1.11.</span> <span class="nav-text">03.03_Java语言基础(位运算符的基本用法1)(了解)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-04-Java语言基础-位异或运算符的特点及面试题"><span class="nav-number">1.12.</span> <span class="nav-text">03.04_Java语言基础(位异或运算符的特点及面试题)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-05-Java语言基础-位运算符的基本用法2及面试题"><span class="nav-number">1.13.</span> <span class="nav-text">03.05_Java语言基础(位运算符的基本用法2及面试题)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-06-Java语言基础-三元运算符的基本用法"><span class="nav-number">1.14.</span> <span class="nav-text">03.06_Java语言基础(三元运算符的基本用法)</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
