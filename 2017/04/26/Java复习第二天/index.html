@@ -1,0 +1,1052 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="java," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="Java复习第二天">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java复习第二天">
+<meta property="og:url" content="http://yoursite.com/2017/04/26/Java复习第二天/index.html">
+<meta property="og:site_name" content="幸运儿、">
+<meta property="og:description" content="Java复习第二天">
+<meta property="og:updated_time" content="2017-04-26T18:17:03.030Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java复习第二天">
+<meta name="twitter:description" content="Java复习第二天">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6376107827278120000',
+      author: '小樊同学'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/04/26/Java复习第二天/"/>
+
+
+
+
+
+  <title> Java复习第二天 | 幸运儿、 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">幸运儿、</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">对这个世界毫无贡献</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/26/Java复习第二天/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="小樊同学">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="幸运儿、">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="幸运儿、" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Java复习第二天
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-26T21:59:43+08:00">
+                2017-04-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/26/Java复习第二天/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/26/Java复习第二天/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+              <div class="post-description">
+                  Java复习第二天
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Java复习第二天"><a href="#Java复习第二天" class="headerlink" title="Java复习第二天"></a>Java复习第二天</h2><h3 id="02-01-Java语言基础-选择结构if语句格式1及其使用"><a href="#02-01-Java语言基础-选择结构if语句格式1及其使用" class="headerlink" title="02.01_Java语言基础(选择结构if语句格式1及其使用)"></a>02.01_Java语言基础(选择结构if语句格式1及其使用)</h3><ul>
+<li>A:选择结构的分类<ul>
+<li>if语句</li>
+<li>switch语句</li>
+</ul>
+</li>
+<li>B:if语句有几种格式<ul>
+<li>格式1</li>
+<li>格式2</li>
+<li>格式3</li>
+</ul>
+</li>
+<li>C:if语句的格式1</li>
+<li><pre><code>if(比较表达式) {
+    语句体;
+}
+</code></pre></li>
+<li>D:执行流程：<ul>
+<li>先计算比较表达式的值，看其返回值是true还是false。</li>
+<li>如果是true，就执行语句体；</li>
+<li>如果是false，就不执行语句体；<h3 id="02-02-Java语言基础-选择结构switch语句的格式及其解释-掌握"><a href="#02-02-Java语言基础-选择结构switch语句的格式及其解释-掌握" class="headerlink" title="02.02_Java语言基础(选择结构switch语句的格式及其解释)(掌握)"></a>02.02_Java语言基础(选择结构switch语句的格式及其解释)(掌握)</h3></li>
+</ul>
+</li>
+<li>A:switch语句的格式</li>
+<li><pre><code>switch(表达式) {
+      case 值1：
+        语句体1;
+        break;
+        case 值2：
+        语句体2;
+        break;
+        …
+        default：    
+        语句体n+1;
+        break;
+}
+</code></pre></li>
+<li><p>B:switch语句的格式解释</p>
+</li>
+<li>C:面试题<ul>
+<li>byte可以作为switch的表达式吗?</li>
+<li>long可以作为switch的表达式吗?</li>
+<li>String可以作为switch的表达式吗?</li>
+</ul>
+</li>
+<li>C:执行流程<ul>
+<li>先计算表达式的值</li>
+<li>然后和case后面的匹配，如果有就执行对应的语句，否则执行default控制的语句<h3 id="02-03-Java语言基础-选择结构switch语句的注意事项"><a href="#02-03-Java语言基础-选择结构switch语句的注意事项" class="headerlink" title="02.03_Java语言基础(选择结构switch语句的注意事项)"></a>02.03_Java语言基础(选择结构switch语句的注意事项)</h3></li>
+</ul>
+</li>
+<li>A:案例演示<ul>
+<li>a:case后面只能是常量，不能是变量，而且，多个case后面的值不能出现相同的</li>
+<li>b:default可以省略吗?<ul>
+<li>可以省略，但是不建议，因为它的作用是对不正确的情况给出提示。</li>
+<li>特殊情况：<ul>
+<li>case就可以把值固定。</li>
+<li>A,B,C,D</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>c:break可以省略吗?<ul>
+<li>最后一个可以省略,其他最好不要省略</li>
+<li>会出现一个现象：case穿透。</li>
+<li>最终我们建议不要省略</li>
+</ul>
+</li>
+<li>d:default一定要在最后吗?<ul>
+<li>不是，可以在任意位置。但是建议在最后。</li>
+</ul>
+</li>
+<li>e:switch语句的结束条件<ul>
+<li>a:遇到break就结束了</li>
+<li>b:执行到switch的右大括号就结束了<h3 id="02-04-Java语言基础-循环结构概述和for语句的格式及其使用"><a href="#02-04-Java语言基础-循环结构概述和for语句的格式及其使用" class="headerlink" title="02.04_Java语言基础(循环结构概述和for语句的格式及其使用)"></a>02.04_Java语言基础(循环结构概述和for语句的格式及其使用)</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A:循环结构的分类<ul>
+<li>for,while,do…while </li>
+</ul>
+</li>
+<li>B:循环结构for语句的格式：</li>
+<li><pre><code>for(初始化表达式;条件表达式;循环后的操作表达式) {
+    循环体;
+}
+</code></pre></li>
+<li>C执行流程：<ul>
+<li>a:执行初始化语句</li>
+<li>b:执行判断条件语句,看其返回值是true还是false<ul>
+<li>如果是true，就继续执行</li>
+<li>如果是false，就结束循环</li>
+</ul>
+</li>
+<li>c:执行循环体语句;</li>
+<li>d:执行循环后的操作表达式</li>
+<li>e:回到B继续。</li>
+</ul>
+</li>
+<li>D:案例演示<ul>
+<li>在控制台输出10次”helloworld”<h3 id="02-05-Java语言基础-循环结构while语句的格式和基本使用"><a href="#02-05-Java语言基础-循环结构while语句的格式和基本使用" class="headerlink" title="02.05_Java语言基础(循环结构while语句的格式和基本使用)"></a>02.05_Java语言基础(循环结构while语句的格式和基本使用)</h3></li>
+</ul>
+</li>
+<li>A:循环结构while语句的格式：</li>
+<li><p>while循环的基本格式：<br>while(判断条件语句) {<br>  循环体语句;<br>}</p>
+<p>完整格式：</p>
+<p>初始化语句;<br>while(判断条件语句) {<br>   循环体语句;<br>   控制条件语句;<br>}</p>
+</li>
+<li>B:执行流程：<ul>
+<li>a:执行初始化语句</li>
+<li>b:执行判断条件语句,看其返回值是true还是false<ul>
+<li>如果是true，就继续执行</li>
+<li>如果是false，就结束循环</li>
+</ul>
+</li>
+<li>c:执行循环体语句;</li>
+<li>d:执行控制条件语句</li>
+<li>e:回到B继续。</li>
+</ul>
+</li>
+<li>C:案例演示<ul>
+<li>需求：请在控制台输出数据1-10<h3 id="02-06-Java语言基础-循环结构三种循环语句的区别"><a href="#02-06-Java语言基础-循环结构三种循环语句的区别" class="headerlink" title="02.06_Java语言基础(循环结构三种循环语句的区别)"></a>02.06_Java语言基础(循环结构三种循环语句的区别)</h3></li>
+</ul>
+</li>
+<li>A:案例演示<ul>
+<li>三种循环语句的区别:</li>
+<li>do…while循环至少执行一次循环体。</li>
+<li>而for,while循环必须先判断条件是否成立，然后决定是否执行循环体语句。</li>
+</ul>
+</li>
+<li>B:案例演示<ul>
+<li>for循环和while循环的区别：<ul>
+<li>A:如果你想在循环结束后，继续使用控制条件的那个变量，用while循环，否则用for循环。不知道用谁就用for循环。因为变量及早的从内存中消失，可以提高内存的使用效率。<h3 id="02-07-Java语言基础-循环结构注意事项之死循环"><a href="#02-07-Java语言基础-循环结构注意事项之死循环" class="headerlink" title="02.07_Java语言基础(循环结构注意事项之死循环)"></a>02.07_Java语言基础(循环结构注意事项之死循环)</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A:一定要注意控制条件语句控制的那个变量的问题，不要弄丢了，否则就容易死循环。</li>
+<li>B:两种最简单的死循环格式<ul>
+<li>while(true){…}</li>
+<li>for(;;){…}</li>
+</ul>
+</li>
+<li>   /*outer: for (int i = 1;i &lt;= 10 ;i++ ) {        //a就是标号,只要是合法的标识符即可<pre><code>System.out.println(&quot;i = &quot; + i);
+inner: for (int j = 1;j &lt;= 10 ;j++ ) {
+    System.out.println(&quot;j = &quot; + j);
+    break outer;
+}
+</code></pre>   }*/<h3 id="02-08-Java语言基础-控制跳转语句return语句"><a href="#02-08-Java语言基础-控制跳转语句return语句" class="headerlink" title="02.08_Java语言基础(控制跳转语句return语句)"></a>02.08_Java语言基础(控制跳转语句return语句)</h3></li>
+<li>A:return的作用<ul>
+<li>返回</li>
+<li>其实它的作用不是结束循环的，而是结束方法的。</li>
+</ul>
+</li>
+<li>B:案例演示<ul>
+<li>return和break以及continue的区别?</li>
+<li>return是结束方法</li>
+<li>break是跳出循环</li>
+<li>continue是终止本次循环继续下次循环<h3 id="02-09-Java语言基础-方法概述和格式说明"><a href="#02-09-Java语言基础-方法概述和格式说明" class="headerlink" title="02.09_Java语言基础(方法概述和格式说明)"></a>02.09_Java语言基础(方法概述和格式说明)</h3></li>
+</ul>
+</li>
+<li>A:为什么要有方法<ul>
+<li>提高代码的复用性 </li>
+</ul>
+</li>
+<li>B:什么是方法<ul>
+<li>完成特定功能的代码块。 </li>
+</ul>
+</li>
+<li>C:方法的格式</li>
+<li><pre><code>修饰符 返回值类型 方法名(参数类型 参数名1,参数类型 参数名2...) {
+    方法体语句;
+    return 返回值; 
+} 
+</code></pre></li>
+<li>D:方法的格式说明<ul>
+<li>修饰符：目前就用 public static。后面我们再详细的讲解其他的修饰符。</li>
+<li>返回值类型：就是功能结果的数据类型。</li>
+<li>方法名：符合命名规则即可。方便我们的调用。</li>
+<li>参数：<ul>
+<li>实际参数：就是实际参与运算的。</li>
+<li>形式参数；就是方法定义上的，用于接收实际参数的。</li>
+</ul>
+</li>
+<li>参数类型：就是参数的数据类型</li>
+<li>参数名：就是变量名</li>
+<li>方法体语句：就是完成功能的代码。</li>
+<li>return：结束方法的。</li>
+<li>返回值：就是功能的结果，由return带给调用者。 <h3 id="02-10-Java语言基础-方法重载概述和基本使用"><a href="#02-10-Java语言基础-方法重载概述和基本使用" class="headerlink" title="02.10_Java语言基础(方法重载概述和基本使用)"></a>02.10_Java语言基础(方法重载概述和基本使用)</h3></li>
+</ul>
+</li>
+<li>A:方法重载概述<ul>
+<li>求和案例<ul>
+<li>2个整数</li>
+<li>3个整数</li>
+<li>4个整数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>B:方法重载：</p>
+<ul>
+<li><p>在同一个类中，方法名相同，参数列表不同。与返回值类型无关。</p>
+</li>
+<li><p>参数列表不同：</p>
+<ul>
+<li>A:参数个数不同</li>
+<li>B:参数类型不同</li>
+<li>C:参数的顺序不同(算重载,但是在开发中不用)<h3 id="02-11-Java语言基础-数组概述和定义格式说明"><a href="#02-11-Java语言基础-数组概述和定义格式说明" class="headerlink" title="02.11_Java语言基础(数组概述和定义格式说明)"></a>02.11_Java语言基础(数组概述和定义格式说明)</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A:为什么要有数组(容器)<ul>
+<li>为了存储同种数据类型的多个值</li>
+</ul>
+</li>
+<li><p>B:数组概念</p>
+<ul>
+<li>数组是存储同一种数据类型多个元素的集合。也可以看成是一个容器。</li>
+<li>数组既可以存储基本数据类型，也可以存储引用数据类型。</li>
+</ul>
+</li>
+<li><p>C:数组定义格式<br>  数据类型[] 数组名 = new 数据类型[数组的长度];</p>
+<h3 id="02-12-Java语言基础-数组的初始化动态初始化"><a href="#02-12-Java语言基础-数组的初始化动态初始化" class="headerlink" title="02.12_Java语言基础(数组的初始化动态初始化)"></a>02.12_Java语言基础(数组的初始化动态初始化)</h3></li>
+<li>A:什么是数组的初始化<ul>
+<li>就是为数组开辟连续的内存空间，并为每个数组元素赋予值 </li>
+</ul>
+</li>
+<li>B:如何对数组进行初始化<ul>
+<li>a:动态初始化 只指定长度，由系统给出初始化值<ul>
+<li>int[] arr = new int[5];     </li>
+</ul>
+</li>
+<li>b:静态初始化 给出初始化值，由系统决定长度    </li>
+</ul>
+</li>
+<li>C:动态初始化的格式：<ul>
+<li>数据类型[] 数组名 = new 数据类型[数组长度];</li>
+</ul>
+</li>
+<li>D:案例演示<ul>
+<li>输出数组名称和数组元素</li>
+</ul>
+</li>
+</ul>
+<p>*</p>
+<pre><code>//数据类型[] 数组名 = new 数据类型[数组长度];
+int[] arr = new int[5];                //动态初始化,在内存中开辟连续的5块空间
+System.out.println(arr[0]);            //系统给出默认初始化值,整数类型的都是0                                    
+arr[0] = 10;
+System.out.println(arr[0]);    
+System.out.println(arr);            //[I@19bb25a
+
+[I@19bb25a
+[代表是数组,几个就代表几维
+I代表是int类型
+@是固定的
+19bb25a代表的是数组的地址值
+</code></pre><h3 id="02-13-Java语言基础-Java中的内存分配以及栈和堆的区别"><a href="#02-13-Java语言基础-Java中的内存分配以及栈和堆的区别" class="headerlink" title="02.13_Java语言基础(Java中的内存分配以及栈和堆的区别)"></a>02.13_Java语言基础(Java中的内存分配以及栈和堆的区别)</h3><ul>
+<li>A:栈(掌握)<ul>
+<li>存储局部变量 </li>
+</ul>
+</li>
+<li>B:堆(掌握)<ul>
+<li>存储new出来的数组或对象 </li>
+</ul>
+</li>
+<li>C:方法区<ul>
+<li>面向对象部分讲解 </li>
+</ul>
+</li>
+<li>D:本地方法区<ul>
+<li>和系统相关 </li>
+</ul>
+</li>
+<li>E:寄存器<ul>
+<li>给CPU使用<h3 id="02-14-Java语言基础-数组操作的两个常见小问题越界和空指针"><a href="#02-14-Java语言基础-数组操作的两个常见小问题越界和空指针" class="headerlink" title="02.14_Java语言基础(数组操作的两个常见小问题越界和空指针)"></a>02.14_Java语言基础(数组操作的两个常见小问题越界和空指针)</h3></li>
+</ul>
+</li>
+<li>A:案例演示<ul>
+<li>a:ArrayIndexOutOfBoundsException:数组索引越界异常<ul>
+<li>原因：你访问了不存在的索引。</li>
+</ul>
+</li>
+<li>b:NullPointerException:空指针异常<ul>
+<li>原因：数组已经不在指向堆内存了。而你还用数组名去访问元素。</li>
+<li>int[] arr = {1,2,3};</li>
+<li>arr = null;</li>
+<li>System.out.println(arr[0]);</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/26/Java复习第一天/" rel="next" title="Java复习第一天">
+                <i class="fa fa-chevron-left"></i> Java复习第一天
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2017/04/26/Java复习第二天/"
+     data-title="Java复习第二天"
+     data-content=""
+     data-url="http://yoursite.com/2017/04/26/Java复习第二天/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/04/26/Java复习第二天/"
+           data-title="Java复习第二天" data-url="http://yoursite.com/2017/04/26/Java复习第二天/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="小樊同学" />
+          <p class="site-author-name" itemprop="name">小樊同学</p>
+          <p class="site-description motion-element" itemprop="description">我不管,我最帅哈哈哈哈哈</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/fanhc" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/201253404?refer_flag=1001030201_&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java复习第二天"><span class="nav-number">1.</span> <span class="nav-text">Java复习第二天</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#02-01-Java语言基础-选择结构if语句格式1及其使用"><span class="nav-number">1.1.</span> <span class="nav-text">02.01_Java语言基础(选择结构if语句格式1及其使用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-02-Java语言基础-选择结构switch语句的格式及其解释-掌握"><span class="nav-number">1.2.</span> <span class="nav-text">02.02_Java语言基础(选择结构switch语句的格式及其解释)(掌握)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-03-Java语言基础-选择结构switch语句的注意事项"><span class="nav-number">1.3.</span> <span class="nav-text">02.03_Java语言基础(选择结构switch语句的注意事项)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-04-Java语言基础-循环结构概述和for语句的格式及其使用"><span class="nav-number">1.4.</span> <span class="nav-text">02.04_Java语言基础(循环结构概述和for语句的格式及其使用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-05-Java语言基础-循环结构while语句的格式和基本使用"><span class="nav-number">1.5.</span> <span class="nav-text">02.05_Java语言基础(循环结构while语句的格式和基本使用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-06-Java语言基础-循环结构三种循环语句的区别"><span class="nav-number">1.6.</span> <span class="nav-text">02.06_Java语言基础(循环结构三种循环语句的区别)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-07-Java语言基础-循环结构注意事项之死循环"><span class="nav-number">1.7.</span> <span class="nav-text">02.07_Java语言基础(循环结构注意事项之死循环)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-08-Java语言基础-控制跳转语句return语句"><span class="nav-number">1.8.</span> <span class="nav-text">02.08_Java语言基础(控制跳转语句return语句)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-09-Java语言基础-方法概述和格式说明"><span class="nav-number">1.9.</span> <span class="nav-text">02.09_Java语言基础(方法概述和格式说明)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-10-Java语言基础-方法重载概述和基本使用"><span class="nav-number">1.10.</span> <span class="nav-text">02.10_Java语言基础(方法重载概述和基本使用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-11-Java语言基础-数组概述和定义格式说明"><span class="nav-number">1.11.</span> <span class="nav-text">02.11_Java语言基础(数组概述和定义格式说明)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-12-Java语言基础-数组的初始化动态初始化"><span class="nav-number">1.12.</span> <span class="nav-text">02.12_Java语言基础(数组的初始化动态初始化)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-13-Java语言基础-Java中的内存分配以及栈和堆的区别"><span class="nav-number">1.13.</span> <span class="nav-text">02.13_Java语言基础(Java中的内存分配以及栈和堆的区别)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-14-Java语言基础-数组操作的两个常见小问题越界和空指针"><span class="nav-number">1.14.</span> <span class="nav-text">02.14_Java语言基础(数组操作的两个常见小问题越界和空指针)</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小樊同学</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"fanhc"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
