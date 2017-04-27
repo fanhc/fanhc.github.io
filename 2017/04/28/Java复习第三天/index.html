@@ -1,0 +1,1159 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="java," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="Java复习第三天">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java复习第三天">
+<meta property="og:url" content="http://yoursite.com/2017/04/28/Java复习第三天/index.html">
+<meta property="og:site_name" content="幸运儿、">
+<meta property="og:description" content="Java复习第三天">
+<meta property="og:updated_time" content="2017-04-27T18:25:25.842Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java复习第三天">
+<meta name="twitter:description" content="Java复习第三天">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6376107827278120000',
+      author: '小樊同学'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/04/28/Java复习第三天/"/>
+
+
+
+
+
+  <title> Java复习第三天 | 幸运儿、 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">幸运儿、</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">对这个世界毫无贡献</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/28/Java复习第三天/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="小樊同学">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="幸运儿、">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="幸运儿、" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Java复习第三天
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-28T02:11:12+08:00">
+                2017-04-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/28/Java复习第三天/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/28/Java复习第三天/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+              <div class="post-description">
+                  Java复习第三天
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Java复习第三天"><a href="#Java复习第三天" class="headerlink" title="Java复习第三天"></a>Java复习第三天</h2><h3 id="03-01-Java语言基础-二维数组概述和格式1的讲解"><a href="#03-01-Java语言基础-二维数组概述和格式1的讲解" class="headerlink" title="03.01_Java语言基础(二维数组概述和格式1的讲解)"></a>03.01_Java语言基础(二维数组概述和格式1的讲解)</h3><ul>
+<li>A:二维数组概述</li>
+<li>B:二维数组格式1<ul>
+<li>int[][] arr = new int[3][2]; </li>
+</ul>
+</li>
+<li>C:二维数组格式1的解释</li>
+<li>D:注意事项<ul>
+<li>a:以下格式也可以表示二维数组<ul>
+<li>1:数据类型 数组名[][] = new 数据类型[m][n];</li>
+<li>2:数据类型[] 数组名[] = new 数据类型[m][n];</li>
+</ul>
+</li>
+<li>B:注意下面定义的区别</li>
+</ul>
+</li>
+<li><pre><code>int x;
+int y;
+int x,y;
+
+int[] x;
+int[] y[];
+
+int[] x,y[];    x是一维数组,y是二维数组
+</code></pre></li>
+<li><p>E:案例演示</p>
+<ul>
+<li>定义二维数组，输出二维数组名称，一维数组名称，一个元素</li>
+</ul>
+</li>
+<li><pre><code>int[][] arr = new int[3][2];
+/*
+这是一个二维数组
+这个二维数组中有3个一维数组
+每个一维数组中有2个元素
+
+[[I@19bb25a                                    //二维数组的地址值
+[I@da6bf4                                    //一维数组的地址值
+0                                            //元素值
+*/
+System.out.println(arr);                    //二维数组
+System.out.println(arr[0]);                    //二维数组中的第一个一维数组
+System.out.println(arr[0][0]);                //二维数组中的第一个一维数组的第一个元素
+</code></pre><h3 id="03-02-面向对象-面向对象思想概述"><a href="#03-02-面向对象-面向对象思想概述" class="headerlink" title="03.02_面向对象(面向对象思想概述)"></a>03.02_面向对象(面向对象思想概述)</h3></li>
+<li>A:面向过程思想概述<ul>
+<li>第一步</li>
+<li>第二步 </li>
+</ul>
+</li>
+<li>B:面向对象思想概述<ul>
+<li>找对象(第一步,第二步) </li>
+</ul>
+</li>
+<li>C:举例<ul>
+<li>买煎饼果子</li>
+<li>洗衣服 </li>
+</ul>
+</li>
+<li>D:面向对象思想特点<ul>
+<li>a:是一种更符合我们思想习惯的思想</li>
+<li>b:可以将复杂的事情简单化</li>
+<li>c:将我们从执行者变成了指挥者<ul>
+<li>角色发生了转换</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>E:面向对象开发<ul>
+<li>就是不断的创建对象，使用对象，指挥对象做事情。</li>
+</ul>
+</li>
+<li>F:面向对象设计<ul>
+<li>其实就是在管理和维护对象之间的关系。</li>
+</ul>
+</li>
+<li>G:面向对象特征<ul>
+<li>封装(encapsulation)</li>
+<li>继承(inheritance)</li>
+<li>多态(polymorphism)<h3 id="03-03-面向对象-类与对象概述"><a href="#03-03-面向对象-类与对象概述" class="headerlink" title="03.03_面向对象(类与对象概述)"></a>03.03_面向对象(类与对象概述)</h3></li>
+</ul>
+</li>
+<li>A:我们学习编程是为了什么<ul>
+<li>为了把我们日常生活中实物用学习语言描述出来</li>
+</ul>
+</li>
+<li>B:我们如何描述现实世界事物<ul>
+<li>属性    就是该事物的描述信息(事物身上的名词)</li>
+<li>行为    就是该事物能够做什么(事物身上的动词)</li>
+</ul>
+</li>
+<li>C:Java中最基本的单位是类,Java中用class描述事物也是如此<ul>
+<li>成员变量    就是事物的属性</li>
+<li>成员方法    就是事物的行为</li>
+</ul>
+</li>
+<li>D:定义类其实就是定义类的成员(成员变量和成员方法)<ul>
+<li>a:成员变量    和以前定义变量是一样的，只不过位置发生了改变。在类中，方法外。</li>
+<li>b:成员方法    和以前定义方法是一样的，只不过把static去掉，后面在详细讲解static的作用。</li>
+</ul>
+</li>
+<li>E:类和对象的概念<ul>
+<li>a:类：是一组相关的属性和行为的集合</li>
+<li>b:对象：是该类事物的具体体现</li>
+<li>c:举例：<ul>
+<li>类     学生</li>
+<li>对象    具体的某个学生就是一个对象<h3 id="03-04-面向对象-成员变量和局部变量的区别"><a href="#03-04-面向对象-成员变量和局部变量的区别" class="headerlink" title="03.04_面向对象(成员变量和局部变量的区别)"></a>03.04_面向对象(成员变量和局部变量的区别)</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A:在类中的位置不同<ul>
+<li>成员变量：在类中方法外</li>
+<li>局部变量：在方法定义中或者方法声明上</li>
+</ul>
+</li>
+<li>B:在内存中的位置不同<ul>
+<li>成员变量：在堆内存(成员变量属于对象,对象进堆内存)</li>
+<li>局部变量：在栈内存(局部变量属于方法,方法进栈内存)</li>
+</ul>
+</li>
+<li>C:生命周期不同<ul>
+<li>成员变量：随着对象的创建而存在，随着对象的消失而消失</li>
+<li>局部变量：随着方法的调用而存在，随着方法的调用完毕而消失</li>
+</ul>
+</li>
+<li><p>D:初始化值不同</p>
+<ul>
+<li>成员变量：有默认初始化值</li>
+<li>局部变量：没有默认初始化值，必须定义，赋值，然后才能使用。</li>
+</ul>
+</li>
+<li><p>注意事项：</p>
+<ul>
+<li>局部变量名称可以和成员变量名称一样，在方法中使用的时候，采用的是就近原则。</li>
+<li>基本数据类型变量包括哪些:byte,short,int,long,float,double,boolean,char</li>
+<li>引用数据类型变量包括哪些:数组,类,接口,枚举</li>
+</ul>
+</li>
+</ul>
+<h3 id="03-05-面向对象-匿名对象的概述和应用"><a href="#03-05-面向对象-匿名对象的概述和应用" class="headerlink" title="03.05_面向对象(匿名对象的概述和应用)"></a>03.05_面向对象(匿名对象的概述和应用)</h3><ul>
+<li>A:什么是匿名对象<ul>
+<li>没有名字的对象 </li>
+</ul>
+</li>
+<li>B:匿名对象应用场景<ul>
+<li>a:调用方法，仅仅只调用一次的时候。<ul>
+<li>那么，这种匿名调用有什么好处吗?<ul>
+<li>节省代码 </li>
+</ul>
+</li>
+<li>注意：调用多次的时候，不适合。匿名对象调用完毕就是垃圾。可以被垃圾回收器回收。</li>
+</ul>
+</li>
+<li>b:匿名对象可以作为实际参数传递</li>
+</ul>
+</li>
+<li>C:案例演示<ul>
+<li>匿名对象应用场景<h3 id="03-06-面向对象-封装的概述"><a href="#03-06-面向对象-封装的概述" class="headerlink" title="03.06_面向对象(封装的概述)"></a>03.06_面向对象(封装的概述)</h3></li>
+</ul>
+</li>
+<li><p>A:封装概述</p>
+<ul>
+<li>是指隐藏对象的属性和实现细节，仅对外提供公共访问方式。</li>
+</ul>
+</li>
+<li><p>B:封装好处</p>
+<ul>
+<li>隐藏实现细节，提供公共的访问方式</li>
+<li>提高了代码的复用性</li>
+<li>提高安全性。</li>
+</ul>
+</li>
+<li>C:封装原则<ul>
+<li>将不需要对外提供的内容都隐藏起来。</li>
+<li>把属性隐藏，提供公共方法对其访问。<h3 id="03-07-面向对象-private关键字的概述和特点"><a href="#03-07-面向对象-private关键字的概述和特点" class="headerlink" title="03.07_面向对象(private关键字的概述和特点)"></a>03.07_面向对象(private关键字的概述和特点)</h3></li>
+</ul>
+</li>
+<li>A:人类赋值年龄的问题</li>
+<li>B:private关键字特点<ul>
+<li>a:是一个权限修饰符</li>
+<li>b:可以修饰成员变量和成员方法</li>
+<li>c:被其修饰的成员只能在本类中被访问</li>
+</ul>
+</li>
+<li>C:案例演示<ul>
+<li>封装和private的应用：</li>
+<li>A:把成员变量用private修饰</li>
+<li>B:提供对应的getXxx()和setXxx()方法</li>
+<li>private仅仅是封装的一种体现形式,不能说封装就是私有</li>
+</ul>
+</li>
+</ul>
+<h3 id="03-08-面向对象-this关键字的概述和应用"><a href="#03-08-面向对象-this关键字的概述和应用" class="headerlink" title="03.08_面向对象(this关键字的概述和应用)"></a>03.08_面向对象(this关键字的概述和应用)</h3><ul>
+<li>A:this关键字特点<ul>
+<li>代表当前对象的引用 </li>
+</ul>
+</li>
+<li>B:案例演示<ul>
+<li>this的应用场景</li>
+<li>用来区分成员变量和局部变量重名<h3 id="03-09-面向对象-构造方法Constructor概述和格式"><a href="#03-09-面向对象-构造方法Constructor概述和格式" class="headerlink" title="03.09_面向对象(构造方法Constructor概述和格式)"></a>03.09_面向对象(构造方法Constructor概述和格式)</h3></li>
+</ul>
+</li>
+<li>A:构造方法概述和作用<ul>
+<li>给对象的数据(属性)进行初始化</li>
+</ul>
+</li>
+<li>B:构造方法格式特点<ul>
+<li>a:方法名与类名相同(大小也要与类名一致)</li>
+<li>b:没有返回值类型，连void都没有</li>
+<li>c:没有具体的返回值return;<h3 id="03-10-面向对象-构造方法的重载及注意事项"><a href="#03-10-面向对象-构造方法的重载及注意事项" class="headerlink" title="03.10_面向对象(构造方法的重载及注意事项)"></a>03.10_面向对象(构造方法的重载及注意事项)</h3></li>
+</ul>
+</li>
+<li>A:案例演示<ul>
+<li>构造方法的重载</li>
+<li>重载:方法名相同,与返回值类型无关(构造方法没有返回值),只看参数列表</li>
+</ul>
+</li>
+<li>B:构造方法注意事项<ul>
+<li>a:如果我们没有给出构造方法，系统将自动提供一个无参构造方法。</li>
+<li>b:如果我们给出了构造方法，系统将不再提供默认的无参构造方法。<ul>
+<li>注意：这个时候，如果我们还想使用无参构造方法，就必须自己给出。建议永远自己给出无参构造方法<h3 id="03-12-面向对象-给成员变量赋值的两种方式的区别"><a href="#03-12-面向对象-给成员变量赋值的两种方式的区别" class="headerlink" title="03.12_面向对象(给成员变量赋值的两种方式的区别)"></a>03.12_面向对象(给成员变量赋值的两种方式的区别)</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A:setXxx()方法<ul>
+<li>修改属性值 </li>
+</ul>
+</li>
+<li>B:构造方法<ul>
+<li>给对象中属性进行初始化 <h3 id="03-13-面向对象-创建一个对象的步骤"><a href="#03-13-面向对象-创建一个对象的步骤" class="headerlink" title="03.13_面向对象(创建一个对象的步骤)"></a>03.13_面向对象(创建一个对象的步骤)</h3></li>
+</ul>
+</li>
+<li>A:画图演示<ul>
+<li>画图说明一个对象的创建过程做了哪些事情?</li>
+<li>Student s = new Student();</li>
+<li>1,Student.class加载进内存</li>
+<li>2,声明一个Student类型引用s</li>
+<li>3,在堆内存创建对象,</li>
+<li>4,给对象中属性默认初始化值</li>
+<li>5,属性进行显示初始化</li>
+<li>6,构造方法进栈,对对象中的属性赋值,构造方法弹栈</li>
+<li>7,将对象的地址值赋值给s</li>
+</ul>
+</li>
+</ul>
+<h3 id="03-14-面向对象-static关键字及内存图"><a href="#03-14-面向对象-static关键字及内存图" class="headerlink" title="03.14_面向对象(static关键字及内存图)"></a>03.14_面向对象(static关键字及内存图)</h3><ul>
+<li><p>A:案例演示</p>
+<ul>
+<li>通过一个案例引入static关键字。</li>
+<li>人类：Person。每个人都有国籍，中国。</li>
+</ul>
+</li>
+<li><p>B:画图演示</p>
+<ul>
+<li>带有static的内存图<h3 id="03-15-面向对象-static关键字的特点"><a href="#03-15-面向对象-static关键字的特点" class="headerlink" title="03.15_面向对象(static关键字的特点)"></a>03.15_面向对象(static关键字的特点)</h3></li>
+</ul>
+</li>
+<li>A:static关键字的特点<ul>
+<li>a:随着类的加载而加载</li>
+<li>b:优先于对象存在</li>
+<li>c:被类的所有对象共享<ul>
+<li>举例：咱们班级的学生应该共用同一个班级编号。</li>
+<li>其实这个特点也是在告诉我们什么时候使用静态?<ul>
+<li>如果某个成员变量是被所有对象共享的，那么它就应该定义为静态的。</li>
+</ul>
+</li>
+<li>举例：<ul>
+<li>饮水机(用静态修饰)</li>
+<li>水杯(不能用静态修饰)</li>
+<li>共性用静态,特性用非静态</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>d:可以通过类名调用<ul>
+<li>其实它本身也可以通过对象名调用。</li>
+<li>推荐使用类名调用。</li>
+<li>静态修饰的内容一般我们称其为：与类相关的，类成员</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>B:案例演示<ul>
+<li>static关键字的特点</li>
+</ul>
+</li>
+</ul>
+<h3 id="03-16-面向对象-static的注意事项"><a href="#03-16-面向对象-static的注意事项" class="headerlink" title="03.16_面向对象(static的注意事项)"></a>03.16_面向对象(static的注意事项)</h3><ul>
+<li>A:static的注意事项<ul>
+<li>a:在静态方法中是没有this关键字的<ul>
+<li>如何理解呢?<ul>
+<li>静态是随着类的加载而加载，this是随着对象的创建而存在。</li>
+<li>静态比对象先存在。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>b:静态方法只能访问静态的成员变量和静态的成员方法<ul>
+<li>静态方法：<ul>
+<li>成员变量：只能访问静态变量</li>
+<li>成员方法：只能访问静态成员方法</li>
+</ul>
+</li>
+<li>非静态方法：<ul>
+<li>成员变量：可以是静态的，也可以是非静态的</li>
+<li>成员方法：可是是静态的成员方法，也可以是非静态的成员方法。</li>
+</ul>
+</li>
+<li>简单记：<ul>
+<li>静态只能访问静态。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>B:案例演示<ul>
+<li>static的注意事项</li>
+</ul>
+</li>
+</ul>
+<h3 id="03-17-面向对象-静态变量和成员变量的区别"><a href="#03-17-面向对象-静态变量和成员变量的区别" class="headerlink" title="03.17_面向对象(静态变量和成员变量的区别)"></a>03.17_面向对象(静态变量和成员变量的区别)</h3><ul>
+<li>静态变量也叫类变量  成员变量也叫对象变量</li>
+<li>A:所属不同<ul>
+<li>静态变量属于类，所以也称为为类变量</li>
+<li>成员变量属于对象，所以也称为实例变量(对象变量)</li>
+</ul>
+</li>
+<li>B:内存中位置不同<ul>
+<li>静态变量存储于方法区的静态区</li>
+<li>成员变量存储于堆内存</li>
+</ul>
+</li>
+<li>C:内存出现时间不同<ul>
+<li>静态变量随着类的加载而加载，随着类的消失而消失</li>
+<li>成员变量随着对象的创建而存在，随着对象的消失而消失</li>
+</ul>
+</li>
+<li>D:调用不同<ul>
+<li>静态变量可以通过类名调用，也可以通过对象调用</li>
+<li>成员变量只能通过对 象名调用</li>
+</ul>
+</li>
+</ul>
+<p>*</p>
+<pre><code>int num1 = 10;                        //非静态的成员变量
+static int num2 = 20;                //静态的成员变量
+
+/*public void print1() {                //非静态的成员方法,既可以访问静态的成员也可以访问非静态的
+    System.out.println(num1);
+    System.out.println(num2);
+}*/
+
+public static void print2() {        //静态的成员方法
+    //System.out.println(this.num1);//静态的成员方法不能访问非静态的,错误: 无法从静态上下文中引用非静态 变量 num1
+    System.out.println(num2);
+}
+</code></pre><h3 id="03-18-面向对象-main方法的格式详细解释"><a href="#03-18-面向对象-main方法的格式详细解释" class="headerlink" title="03.18_面向对象(main方法的格式详细解释)"></a>03.18_面向对象(main方法的格式详细解释)</h3><ul>
+<li>A:格式<ul>
+<li>public static void main(String[] args) {}</li>
+</ul>
+</li>
+<li>B:针对格式的解释<ul>
+<li>public 被jvm调用，访问权限足够大。</li>
+<li>static 被jvm调用，不用创建对象，直接类名访问</li>
+<li>void被jvm调用，不需要给jvm返回值</li>
+<li>main 一个通用的名称，虽然不是关键字，但是被jvm识别</li>
+<li>String[] args 以前用于接收键盘录入的</li>
+</ul>
+</li>
+<li>C:演示案例<ul>
+<li>通过args接收键盘例如数据<h3 id="03-19-面向对象-工具类中使用静态"><a href="#03-19-面向对象-工具类中使用静态" class="headerlink" title="03.19_面向对象(工具类中使用静态)"></a>03.19_面向对象(工具类中使用静态)</h3></li>
+</ul>
+</li>
+<li>A:制作一个工具类<ul>
+<li>ArrayTool</li>
+<li>1,获取最大值</li>
+<li>2,数组的遍历</li>
+<li>3,数组的反转</li>
+<li>4,如果一个类全是静态方法,那么可以弄一个私有的构造方法让你不能创建对象来使用它的方法<h3 id="03-20-面向对象-学习Math类的随机数功能"><a href="#03-20-面向对象-学习Math类的随机数功能" class="headerlink" title="03.20_面向对象(学习Math类的随机数功能)"></a>03.20_面向对象(学习Math类的随机数功能)</h3></li>
+</ul>
+</li>
+<li>打开JDK提供的帮助文档学习</li>
+<li>A:Math类概述<ul>
+<li>类包含用于执行基本数学运算的方法</li>
+</ul>
+</li>
+<li>B:Math类特点<ul>
+<li>由于Math类在java.lang包下，所以不需要导包。</li>
+<li>因为它的成员全部是静态的,所以私有了构造方法</li>
+</ul>
+</li>
+<li>C:获取随机数的方法<ul>
+<li>public static double random():返回带正号的 double 值，该值大于等于 0.0 且小于 1.0。</li>
+</ul>
+</li>
+<li>D:我要获取一个1-100之间的随机数，肿么办?<ul>
+<li>int number = (int)(Math.random()*100)+1;</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/27/Java复习第二天/" rel="next" title="Java复习第二天">
+                <i class="fa fa-chevron-left"></i> Java复习第二天
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2017/04/28/Java复习第三天/"
+     data-title="Java复习第三天"
+     data-content=""
+     data-url="http://yoursite.com/2017/04/28/Java复习第三天/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/04/28/Java复习第三天/"
+           data-title="Java复习第三天" data-url="http://yoursite.com/2017/04/28/Java复习第三天/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="小樊同学" />
+          <p class="site-author-name" itemprop="name">小樊同学</p>
+          <p class="site-description motion-element" itemprop="description">我不管,我最帅哈哈哈哈哈</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/fanhc" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/201253404?refer_flag=1001030201_&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java复习第三天"><span class="nav-number">1.</span> <span class="nav-text">Java复习第三天</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#03-01-Java语言基础-二维数组概述和格式1的讲解"><span class="nav-number">1.1.</span> <span class="nav-text">03.01_Java语言基础(二维数组概述和格式1的讲解)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-02-面向对象-面向对象思想概述"><span class="nav-number">1.2.</span> <span class="nav-text">03.02_面向对象(面向对象思想概述)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-03-面向对象-类与对象概述"><span class="nav-number">1.3.</span> <span class="nav-text">03.03_面向对象(类与对象概述)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-04-面向对象-成员变量和局部变量的区别"><span class="nav-number">1.4.</span> <span class="nav-text">03.04_面向对象(成员变量和局部变量的区别)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-05-面向对象-匿名对象的概述和应用"><span class="nav-number">1.5.</span> <span class="nav-text">03.05_面向对象(匿名对象的概述和应用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-06-面向对象-封装的概述"><span class="nav-number">1.6.</span> <span class="nav-text">03.06_面向对象(封装的概述)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-07-面向对象-private关键字的概述和特点"><span class="nav-number">1.7.</span> <span class="nav-text">03.07_面向对象(private关键字的概述和特点)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-08-面向对象-this关键字的概述和应用"><span class="nav-number">1.8.</span> <span class="nav-text">03.08_面向对象(this关键字的概述和应用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-09-面向对象-构造方法Constructor概述和格式"><span class="nav-number">1.9.</span> <span class="nav-text">03.09_面向对象(构造方法Constructor概述和格式)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-10-面向对象-构造方法的重载及注意事项"><span class="nav-number">1.10.</span> <span class="nav-text">03.10_面向对象(构造方法的重载及注意事项)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-12-面向对象-给成员变量赋值的两种方式的区别"><span class="nav-number">1.11.</span> <span class="nav-text">03.12_面向对象(给成员变量赋值的两种方式的区别)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-13-面向对象-创建一个对象的步骤"><span class="nav-number">1.12.</span> <span class="nav-text">03.13_面向对象(创建一个对象的步骤)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-14-面向对象-static关键字及内存图"><span class="nav-number">1.13.</span> <span class="nav-text">03.14_面向对象(static关键字及内存图)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-15-面向对象-static关键字的特点"><span class="nav-number">1.14.</span> <span class="nav-text">03.15_面向对象(static关键字的特点)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-16-面向对象-static的注意事项"><span class="nav-number">1.15.</span> <span class="nav-text">03.16_面向对象(static的注意事项)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-17-面向对象-静态变量和成员变量的区别"><span class="nav-number">1.16.</span> <span class="nav-text">03.17_面向对象(静态变量和成员变量的区别)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-18-面向对象-main方法的格式详细解释"><span class="nav-number">1.17.</span> <span class="nav-text">03.18_面向对象(main方法的格式详细解释)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-19-面向对象-工具类中使用静态"><span class="nav-number">1.18.</span> <span class="nav-text">03.19_面向对象(工具类中使用静态)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-20-面向对象-学习Math类的随机数功能"><span class="nav-number">1.19.</span> <span class="nav-text">03.20_面向对象(学习Math类的随机数功能)</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小樊同学</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"fanhc"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
