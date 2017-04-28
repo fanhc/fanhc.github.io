@@ -1,0 +1,1099 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="java," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="Java复习第四天">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java复习第四天">
+<meta property="og:url" content="http://yoursite.com/2017/04/29/Java复习第四天/index.html">
+<meta property="og:site_name" content="幸运儿、">
+<meta property="og:description" content="Java复习第四天">
+<meta property="og:updated_time" content="2017-04-28T18:46:35.655Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java复习第四天">
+<meta name="twitter:description" content="Java复习第四天">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6376107827278120000',
+      author: '小樊同学'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/04/29/Java复习第四天/"/>
+
+
+
+
+
+  <title> Java复习第四天 | 幸运儿、 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">幸运儿、</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">对这个世界毫无贡献</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/29/Java复习第四天/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="小樊同学">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="幸运儿、">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="幸运儿、" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Java复习第四天
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-29T02:46:32+08:00">
+                2017-04-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/29/Java复习第四天/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/29/Java复习第四天/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+              <div class="post-description">
+                  Java复习第四天
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Java复习第四天"><a href="#Java复习第四天" class="headerlink" title="Java复习第四天"></a>Java复习第四天</h2><h3 id="04-01-面向对象-代码块的概述和分类-面试的时候会问-开发不用或者很少用"><a href="#04-01-面向对象-代码块的概述和分类-面试的时候会问-开发不用或者很少用" class="headerlink" title="04.01_面向对象(代码块的概述和分类)(面试的时候会问,开发不用或者很少用)"></a>04.01_面向对象(代码块的概述和分类)(面试的时候会问,开发不用或者很少用)</h3><ul>
+<li>A:代码块概述<ul>
+<li>在Java中，使用{}括起来的代码被称为代码块。</li>
+</ul>
+</li>
+<li>B:代码块分类<ul>
+<li>根据其位置和声明的不同，可以分为局部代码块，构造代码块，静态代码块，同步代码块(多线程讲解)。</li>
+</ul>
+</li>
+<li>C:常见代码块的应用<ul>
+<li>a:局部代码块 <ul>
+<li>在方法中出现；限定变量生命周期，及早释放，提高内存利用率</li>
+</ul>
+</li>
+<li>b:构造代码块 (初始化块)<ul>
+<li>在类中方法外出现；多个构造方法方法中相同的代码存放到一起，每次调用构造都执行，并且在构造方法前执行</li>
+</ul>
+</li>
+<li>c:静态代码块 <ul>
+<li>在类中方法外出现，并加上static修饰；用于给类进行初始化，在加载的时候就执行，并且只执行一次。</li>
+<li>一般用于加载驱动<h3 id="04-02-面向对象-代码块的面试题"><a href="#04-02-面向对象-代码块的面试题" class="headerlink" title="04.02_面向对象(代码块的面试题)"></a>04.02_面向对象(代码块的面试题)</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A:看程序写结果</li>
+<li><pre><code>class Student {
+    static {
+        System.out.println(&quot;Student 静态代码块&quot;);
+    }
+
+    {
+        System.out.println(&quot;Student 构造代码块&quot;);
+    }
+
+    public Student() {
+        System.out.println(&quot;Student 构造方法&quot;);
+    }
+}
+
+class Demo2_Student {
+    static {
+        System.out.println(&quot;Demo2_Student静态代码块&quot;);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(&quot;我是main方法&quot;);
+
+        Student s1 = new Student();
+        Student s2 = new Student();
+    }
+}
+</code></pre><h3 id="04-03-面向对象-继承案例演示"><a href="#04-03-面向对象-继承案例演示" class="headerlink" title="04.03_面向对象(继承案例演示)"></a>04.03_面向对象(继承案例演示)</h3></li>
+<li>A:继承(extends)<ul>
+<li>让类与类之间产生关系,子父类关系 </li>
+</ul>
+</li>
+<li>B:继承案例演示：<ul>
+<li>动物类,猫类,狗类</li>
+<li>定义两个属性(颜色,腿的个数)两个功能(吃饭，睡觉)</li>
+</ul>
+</li>
+<li>C:案例演示<ul>
+<li>使用继承前</li>
+</ul>
+</li>
+<li>D:案例演示<ul>
+<li>使用继承后</li>
+</ul>
+</li>
+</ul>
+<h3 id="04-04-面向对象-继承的好处和弊端"><a href="#04-04-面向对象-继承的好处和弊端" class="headerlink" title="04.04_面向对象(继承的好处和弊端)"></a>04.04_面向对象(继承的好处和弊端)</h3><ul>
+<li>A:继承的好处<ul>
+<li>a:提高了代码的复用性</li>
+<li>b:提高了代码的维护性</li>
+<li>c:让类与类之间产生了关系，是多态的前提</li>
+</ul>
+</li>
+<li><p>B:继承的弊端</p>
+<ul>
+<li><p>类的耦合性增强了。</p>
+</li>
+<li><p>开发的原则：高内聚，低耦合。</p>
+</li>
+<li>耦合：类与类的关系</li>
+<li>内聚：就是自己完成某件事情的能力</li>
+</ul>
+</li>
+</ul>
+<h3 id="04-05-面向对象-Java中类的继承特点"><a href="#04-05-面向对象-Java中类的继承特点" class="headerlink" title="04.05_面向对象(Java中类的继承特点)"></a>04.05_面向对象(Java中类的继承特点)</h3><ul>
+<li>A:Java中类的继承特点<ul>
+<li>a:Java只支持单继承，不支持多继承。(一个儿子只能有一个爹)<ul>
+<li>有些语言是支持多继承，格式：extends 类1,类2,…</li>
+</ul>
+</li>
+<li>b:Java支持多层继承(继承体系)</li>
+</ul>
+</li>
+<li>B:案例演示<ul>
+<li>Java中类的继承特点<ul>
+<li>如果想用这个体系的所有功能用最底层的类创建对象</li>
+<li>如果想看这个体系的共性功能,看最顶层的类 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="04-06-面向对象-继承的注意事项和什么时候使用继承"><a href="#04-06-面向对象-继承的注意事项和什么时候使用继承" class="headerlink" title="04.06_面向对象(继承的注意事项和什么时候使用继承)"></a>04.06_面向对象(继承的注意事项和什么时候使用继承)</h3><ul>
+<li>A:继承的注意事项<ul>
+<li>a:子类只能继承父类所有非私有的成员(成员方法和成员变量)</li>
+<li>b:子类不能继承父类的构造方法，但是可以通过super(马上讲)关键字去访问父类构造方法。</li>
+<li>c:不要为了部分功能而去继承</li>
+<li>项目经理 姓名 工号 工资 奖金</li>
+<li>程序员    姓名 工号 工资</li>
+</ul>
+</li>
+<li><p>B:什么时候使用继承</p>
+<ul>
+<li><p>继承其实体现的是一种关系：”is a”。<br>  Person</p>
+<pre><code>Student
+Teacher
+</code></pre><p>  水果</p>
+<pre><code>苹果
+香蕉
+橘子
+</code></pre><p>采用假设法。<br>  如果有两个类A,B。只有他们符合A是B的一种，或者B是A的一种，就可以考虑使用继承。</p>
+<h3 id="04-07-面向对象-继承中成员变量的关系"><a href="#04-07-面向对象-继承中成员变量的关系" class="headerlink" title="04.07_面向对象(继承中成员变量的关系)"></a>04.07_面向对象(继承中成员变量的关系)</h3></li>
+</ul>
+</li>
+<li>A:案例演示<ul>
+<li>a:不同名的变量</li>
+<li>b:同名的变量<h3 id="04-08-面向对象-this和super的区别和应用"><a href="#04-08-面向对象-this和super的区别和应用" class="headerlink" title="04.08_面向对象(this和super的区别和应用)"></a>04.08_面向对象(this和super的区别和应用)</h3></li>
+</ul>
+</li>
+<li>A:this和super都代表什么<ul>
+<li>this:代表当前对象的引用,谁来调用我,我就代表谁</li>
+<li>super:代表当前对象父类的引用</li>
+</ul>
+</li>
+<li>B:this和super的使用区别<ul>
+<li>a:调用成员变量<ul>
+<li>this.成员变量 调用本类的成员变量,也可以调用父类的成员变量</li>
+<li>super.成员变量 调用父类的成员变量</li>
+</ul>
+</li>
+<li>b:调用构造方法<ul>
+<li>this(…)    调用本类的构造方法</li>
+<li>super(…)    调用父类的构造方法</li>
+</ul>
+</li>
+<li>c:调用成员方法<ul>
+<li>this.成员方法 调用本类的成员方法,也可<h3 id="04-09-面向对象-继承中构造方法的关系"><a href="#04-09-面向对象-继承中构造方法的关系" class="headerlink" title="04.09_面向对象(继承中构造方法的关系)"></a>04.09_面向对象(继承中构造方法的关系)</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A:案例演示<ul>
+<li>子类中所有的构造方法默认都会访问父类中空参数的构造方法</li>
+</ul>
+</li>
+<li><p>B:为什么呢?</p>
+<ul>
+<li>因为子类会继承父类中的数据，可能还会使用父类的数据。</li>
+<li><p>所以，子类初始化之前，一定要先完成父类数据的初始化。</p>
+</li>
+<li><p>其实：</p>
+<ul>
+<li>每一个构造方法的第一条语句默认都是：super() Object类最顶层的父类。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="04-10-面向对象-继承中构造方法的注意事项"><a href="#04-10-面向对象-继承中构造方法的注意事项" class="headerlink" title="04.10_面向对象(继承中构造方法的注意事项)"></a>04.10_面向对象(继承中构造方法的注意事项)</h3><ul>
+<li>A:案例演示<ul>
+<li>父类没有无参构造方法,子类怎么办?</li>
+<li>super解决</li>
+<li>this解决</li>
+</ul>
+</li>
+<li>B:注意事项<ul>
+<li>super(…)或者this(….)必须出现在构造方法的第一条语句上</li>
+</ul>
+</li>
+</ul>
+<h3 id="04-11-面向对象-继承中的面试题"><a href="#04-11-面向对象-继承中的面试题" class="headerlink" title="04.11_面向对象(继承中的面试题)"></a>04.11_面向对象(继承中的面试题)</h3><ul>
+<li>A:案例演示</li>
+<li><p>看程序写结果1<br>class Fu{<br>  public int num = 10;<br>  public Fu(){</p>
+<pre><code>System.out.println(&quot;fu&quot;);
+</code></pre><p>  }<br>}<br>class Zi extends Fu{<br>  public int num = 20;<br>  public Zi(){</p>
+<pre><code>System.out.println(&quot;zi&quot;);
+</code></pre><p>  }<br>  public void show(){</p>
+<pre><code>int num = 30;
+System.out.println(num);
+System.out.println(this.num);
+System.out.println(super.num);
+</code></pre><p>  }<br>}<br>class Test1_Extends {<br>  public static void main(String[] args) {</p>
+<pre><code>Zi z = new Zi();
+z.show();
+</code></pre><p>  }<br>}</p>
+<p>看程序写结果2<br>class Fu {<br>  static {</p>
+<pre><code>System.out.println(&quot;静态代码块Fu&quot;);
+</code></pre><p>  }</p>
+<p>  {</p>
+<pre><code>System.out.println(&quot;构造代码块Fu&quot;);
+</code></pre><p>  }</p>
+<p>  public Fu() {</p>
+<pre><code>System.out.println(&quot;构造方法Fu&quot;);
+</code></pre><p>  }<br>}</p>
+<p>class Zi extends Fu {<br>  static {</p>
+<pre><code>System.out.println(&quot;静态代码块Zi&quot;);
+</code></pre><p>  }</p>
+<p>  {</p>
+<pre><code>System.out.println(&quot;构造代码块Zi&quot;);
+</code></pre><p>  }</p>
+<p>  public Zi() {</p>
+<pre><code>System.out.println(&quot;构造方法Zi&quot;);
+</code></pre><p>  }<br>}</p>
+<p>Zi z = new Zi(); 请执行结果。<br>/*<br>1,jvm调用了main方法,main进栈<br>2,遇到Zi z = new Zi();会先将Fu.class和Zi.class分别加载进内存,再创建对象,当Fu.class加载进内存<br>父类的静态代码块会随着Fu.class一起加载,当Zi.class加载进内存,子类的静态代码块会随着Zi.class一起加载<br>第一个输出,静态代码块Fu,第二个输出静态代码块Zi<br>3,走Zi类的构造方法,因为java中是分层初始化的,先初始化父类,再初始化子类,所以先走的父类构造,但是在执行<br>父类构造时,发现父类有构造代码块,构造代码块是优先于构造方法执行的所以<br>第三个输出构造代码块Fu,第四个输出构造方法Fu<br>4,Fu类初始化结束,子类初始化,第五个输出的是构造代码块Zi,构造方法Zi</p>
+<h3 id="04-12-面向对象-继承中成员方法关系"><a href="#04-12-面向对象-继承中成员方法关系" class="headerlink" title="04.12_面向对象(继承中成员方法关系)"></a>04.12_面向对象(继承中成员方法关系)</h3></li>
+<li>A:案例演示<ul>
+<li>a:不同名的方法</li>
+<li>b:同名的方法</li>
+</ul>
+</li>
+</ul>
+<h3 id="04-13-面向对象-方法重写概述及其应用"><a href="#04-13-面向对象-方法重写概述及其应用" class="headerlink" title="04.13_面向对象(方法重写概述及其应用)"></a>04.13_面向对象(方法重写概述及其应用)</h3><ul>
+<li>A:什么是方法重写<ul>
+<li>重写:子父类出现了一模一样的方法(注意:返回值类型可以是子父类,这个我们学完面向对象讲) </li>
+</ul>
+</li>
+<li>B:方法重写的应用：<ul>
+<li>当子类需要父类的功能，而功能主体子类有自己特有内容时，可以重写父类中的方法。这样，即沿袭了父类的功能，又定义了子类特有的内容。</li>
+</ul>
+</li>
+<li>C:案例演示<ul>
+<li>a:定义一个手机类。</li>
+</ul>
+</li>
+</ul>
+<h3 id="04-14-面向对象-方法重写的注意事项"><a href="#04-14-面向对象-方法重写的注意事项" class="headerlink" title="04.14_面向对象(方法重写的注意事项)"></a>04.14_面向对象(方法重写的注意事项)</h3><ul>
+<li><p>A:方法重写注意事项</p>
+<ul>
+<li>a:父类中私有方法不能被重写<ul>
+<li>因为父类私有方法子类根本就无法继承</li>
+</ul>
+</li>
+<li>b:子类重写父类方法时，访问权限不能更低<ul>
+<li>最好就一致</li>
+</ul>
+</li>
+<li><p>c:父类静态方法，子类也必须通过静态方法进行重写</p>
+<ul>
+<li>其实这个算不上方法重写，但是现象确实如此，至于为什么算不上方法重写，多态中我会讲解(静态只能覆盖静态)</li>
+</ul>
+</li>
+<li><p>子类重写父类方法的时候，最好声明一模一样。</p>
+</li>
+</ul>
+</li>
+<li>B:案例演示<ul>
+<li>方法重写注意事项</li>
+</ul>
+</li>
+</ul>
+<h3 id="04-15-面向对象-方法重写的面试题"><a href="#04-15-面向对象-方法重写的面试题" class="headerlink" title="04.15_面向对象(方法重写的面试题)"></a>04.15_面向对象(方法重写的面试题)</h3><ul>
+<li><p>A:方法重写的面试题</p>
+<ul>
+<li>Override和Overload的区别?Overload能改变返回值类型吗?</li>
+<li>overload可以改变返回值类型,只看参数列表</li>
+<li><p>方法重写：子类中出现了和父类中方法声明一模一样的方法。与返回值类型有关,返回值是一致(或者是子父类)的</p>
+</li>
+<li><p>方法重载：本类中出现的方法名一样，参数列表不同的方法。与返回值类型无关。</p>
+</li>
+<li><p>子类对象调用方法的时候：</p>
+<ul>
+<li>先找子类本身，再找父类。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="04-16-面向对象-final关键字修饰类-方法以及变量的特点"><a href="#04-16-面向对象-final关键字修饰类-方法以及变量的特点" class="headerlink" title="04.16_面向对象(final关键字修饰类,方法以及变量的特点)"></a>04.16_面向对象(final关键字修饰类,方法以及变量的特点)</h3><ul>
+<li>A:final概述</li>
+<li>B:final修饰特点<ul>
+<li>修饰类，类不能被继承</li>
+<li>修饰变量，变量就变成了常量，只能被赋值一次</li>
+<li>修饰方法，方法不能被重写</li>
+</ul>
+</li>
+<li>C:案例演示<ul>
+<li>final修饰特点</li>
+</ul>
+</li>
+</ul>
+<h3 id="04-17-面向对象-final关键字修饰局部变量"><a href="#04-17-面向对象-final关键字修饰局部变量" class="headerlink" title="04.17_面向对象(final关键字修饰局部变量)"></a>04.17_面向对象(final关键字修饰局部变量)</h3><ul>
+<li><p>A:案例演示</p>
+<ul>
+<li><p>方法内部或者方法声明上都演示一下(了解)</p>
+</li>
+<li><p>基本类型，是值不能被改变</p>
+</li>
+<li>引用类型其实就是那些对象，是地址值不能被改变,对象中的属性可以改变</li>
+</ul>
+</li>
+</ul>
+<h3 id="04-18-面向对象-final修饰变量的初始化时机"><a href="#04-18-面向对象-final修饰变量的初始化时机" class="headerlink" title="04.18_面向对象(final修饰变量的初始化时机)"></a>04.18_面向对象(final修饰变量的初始化时机)</h3><ul>
+<li>A:final修饰变量的初始化时机<ul>
+<li>显示初始化 </li>
+<li>在对象构造完毕前即可<h3 id="04-19-面向对象-多态的概述及其代码体现"><a href="#04-19-面向对象-多态的概述及其代码体现" class="headerlink" title="04.19_面向对象(多态的概述及其代码体现)"></a>04.19_面向对象(多态的概述及其代码体现)</h3></li>
+</ul>
+</li>
+<li>A:多态(polymorphic)概述<ul>
+<li>事物存在的多种形态</li>
+</ul>
+</li>
+<li>B:多态前提<ul>
+<li>a:要有继承关系.</li>
+<li>b:要有方法的重写</li>
+<li>c:要有父类引用指向子类对象</li>
+</ul>
+</li>
+<li>C:案例演示<ul>
+<li>代码体现多态  父类引用指向子类对象</li>
+</ul>
+</li>
+<li><p>   public class Object_Lei {<br>   public static void main(String[] args) {<br>   Animal a = new Cat();<br>   a.eat();</p>
+<pre><code>}
+</code></pre><p>   }</p>
+<p>   class Animal {</p>
+<pre><code>public void eat() {
+</code></pre><p>   System.out.println(“动物吃饭”);</p>
+<pre><code>}
+</code></pre><p>   }</p>
+<p>   class Cat extends Animal{<br>   public void eat() {<br>   System.out.println(“猫吃鱼”);</p>
+<pre><code>}
+</code></pre><p>   }</p>
+<p>   //成员变量 编译看左边(父类),运行也看左边(父类)<br>   //成员方法 编译看左边(父类),运行看右边(子类) 动态绑定</p>
+<p>   Father f = new son();<br>   sysout.f.num; 这里打印的父类中的 num</p>
+<p>   Father f = new son();<br>   f.print(); 这里打印的子类的方法</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/28/Java复习第三天/" rel="next" title="Java复习第三天">
+                <i class="fa fa-chevron-left"></i> Java复习第三天
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2017/04/29/Java复习第四天/"
+     data-title="Java复习第四天"
+     data-content=""
+     data-url="http://yoursite.com/2017/04/29/Java复习第四天/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/04/29/Java复习第四天/"
+           data-title="Java复习第四天" data-url="http://yoursite.com/2017/04/29/Java复习第四天/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="小樊同学" />
+          <p class="site-author-name" itemprop="name">小樊同学</p>
+          <p class="site-description motion-element" itemprop="description">我不管,我最帅哈哈哈哈哈</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/fanhc" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/201253404?refer_flag=1001030201_&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java复习第四天"><span class="nav-number">1.</span> <span class="nav-text">Java复习第四天</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#04-01-面向对象-代码块的概述和分类-面试的时候会问-开发不用或者很少用"><span class="nav-number">1.1.</span> <span class="nav-text">04.01_面向对象(代码块的概述和分类)(面试的时候会问,开发不用或者很少用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-02-面向对象-代码块的面试题"><span class="nav-number">1.2.</span> <span class="nav-text">04.02_面向对象(代码块的面试题)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-03-面向对象-继承案例演示"><span class="nav-number">1.3.</span> <span class="nav-text">04.03_面向对象(继承案例演示)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-04-面向对象-继承的好处和弊端"><span class="nav-number">1.4.</span> <span class="nav-text">04.04_面向对象(继承的好处和弊端)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-05-面向对象-Java中类的继承特点"><span class="nav-number">1.5.</span> <span class="nav-text">04.05_面向对象(Java中类的继承特点)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-06-面向对象-继承的注意事项和什么时候使用继承"><span class="nav-number">1.6.</span> <span class="nav-text">04.06_面向对象(继承的注意事项和什么时候使用继承)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-07-面向对象-继承中成员变量的关系"><span class="nav-number">1.7.</span> <span class="nav-text">04.07_面向对象(继承中成员变量的关系)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-08-面向对象-this和super的区别和应用"><span class="nav-number">1.8.</span> <span class="nav-text">04.08_面向对象(this和super的区别和应用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-09-面向对象-继承中构造方法的关系"><span class="nav-number">1.9.</span> <span class="nav-text">04.09_面向对象(继承中构造方法的关系)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-10-面向对象-继承中构造方法的注意事项"><span class="nav-number">1.10.</span> <span class="nav-text">04.10_面向对象(继承中构造方法的注意事项)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-11-面向对象-继承中的面试题"><span class="nav-number">1.11.</span> <span class="nav-text">04.11_面向对象(继承中的面试题)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-12-面向对象-继承中成员方法关系"><span class="nav-number">1.12.</span> <span class="nav-text">04.12_面向对象(继承中成员方法关系)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-13-面向对象-方法重写概述及其应用"><span class="nav-number">1.13.</span> <span class="nav-text">04.13_面向对象(方法重写概述及其应用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-14-面向对象-方法重写的注意事项"><span class="nav-number">1.14.</span> <span class="nav-text">04.14_面向对象(方法重写的注意事项)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-15-面向对象-方法重写的面试题"><span class="nav-number">1.15.</span> <span class="nav-text">04.15_面向对象(方法重写的面试题)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-16-面向对象-final关键字修饰类-方法以及变量的特点"><span class="nav-number">1.16.</span> <span class="nav-text">04.16_面向对象(final关键字修饰类,方法以及变量的特点)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-17-面向对象-final关键字修饰局部变量"><span class="nav-number">1.17.</span> <span class="nav-text">04.17_面向对象(final关键字修饰局部变量)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-18-面向对象-final修饰变量的初始化时机"><span class="nav-number">1.18.</span> <span class="nav-text">04.18_面向对象(final修饰变量的初始化时机)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-19-面向对象-多态的概述及其代码体现"><span class="nav-number">1.19.</span> <span class="nav-text">04.19_面向对象(多态的概述及其代码体现)</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小樊同学</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"fanhc"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
