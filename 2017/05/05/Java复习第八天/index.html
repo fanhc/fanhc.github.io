@@ -1,0 +1,1101 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="java," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="Java复习第八天">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java复习第八天">
+<meta property="og:url" content="http://yoursite.com/2017/05/05/Java复习第八天/index.html">
+<meta property="og:site_name" content="幸运儿、">
+<meta property="og:description" content="Java复习第八天">
+<meta property="og:updated_time" content="2017-05-04T17:26:04.880Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java复习第八天">
+<meta name="twitter:description" content="Java复习第八天">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6376107827278120000',
+      author: '小樊同学'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/05/05/Java复习第八天/"/>
+
+
+
+
+
+  <title> Java复习第八天 | 幸运儿、 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">幸运儿、</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">对这个世界毫无贡献</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/05/Java复习第八天/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="小樊同学">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="幸运儿、">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="幸运儿、" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Java复习第八天
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-05T00:33:41+08:00">
+                2017-05-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/05/05/Java复习第八天/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/05/Java复习第八天/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+              <div class="post-description">
+                  Java复习第八天
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Java复习第八天"><a href="#Java复习第八天" class="headerlink" title="Java复习第八天"></a>Java复习第八天</h2><h3 id="08-01-集合框架-对象数组的概述和使用"><a href="#08-01-集合框架-对象数组的概述和使用" class="headerlink" title="08.01_集合框架(对象数组的概述和使用)"></a>08.01_集合框架(对象数组的概述和使用)</h3><ul>
+<li>A:案例演示<ul>
+<li>需求：我有5个学生，请把这个5个学生的信息存储到数组中，并遍历数组，获取得到每一个学生信息。</li>
+</ul>
+</li>
+<li><pre><code>Student[] arr = new Student[5];                    //存储学生对象
+arr[0] = new Student(&quot;张三&quot;, 23);
+arr[1] = new Student(&quot;李四&quot;, 24);
+arr[2] = new Student(&quot;王五&quot;, 25);
+arr[3] = new Student(&quot;赵六&quot;, 26);
+arr[4] = new Student(&quot;马哥&quot;, 20);
+
+for (int i = 0; i &lt; arr.length; i++) {
+    System.out.println(arr[i]);
+}
+</code></pre></li>
+<li><p>B:画图演示</p>
+<ul>
+<li>把学生数组的案例画图讲解</li>
+<li>数组和集合存储引用数据类型,存的都是地址值</li>
+</ul>
+</li>
+</ul>
+<h3 id="08-02-集合框架-集合的由来及集合继承体系图"><a href="#08-02-集合框架-集合的由来及集合继承体系图" class="headerlink" title="08.02_集合框架(集合的由来及集合继承体系图)"></a>08.02_集合框架(集合的由来及集合继承体系图)</h3><ul>
+<li>A:集合的由来<ul>
+<li>数组长度是固定,当添加的元素超过了数组的长度时需要对数组重新定义,太麻烦,java内部给我们提供了集合类,能存储任意对象,长度是可以改变的,随着元素的增加而增加,随着元素的减少而减少 </li>
+</ul>
+</li>
+<li>B:数组和集合的区别<ul>
+<li>区别1 : <ul>
+<li>数组既可以存储基本数据类型,又可以存储引用数据类型,基本数据类型存储的是值,引用数据类型存储的是地址值</li>
+<li>集合只能存储引用数据类型(对象)集合中也可以存储基本数据类型,但是在存储的时候会自动装箱变成对象</li>
+</ul>
+</li>
+<li>区别2:<ul>
+<li>数组长度是固定的,不能自动增长</li>
+<li>集合的长度的是可变的,可以根据元素的增加而增长</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>C:数组和集合什么时候用<pre><code>* 1,如果元素个数是固定的推荐用数组
+* 2,如果元素个数不是固定的推荐用集合
+</code></pre></li>
+<li>D:集合继承体系图<h3 id="08-03-集合框架-Collection集合的基本功能测试"><a href="#08-03-集合框架-Collection集合的基本功能测试" class="headerlink" title="08.03_集合框架(Collection集合的基本功能测试)"></a>08.03_集合框架(Collection集合的基本功能测试)</h3></li>
+<li>A:案例演示    </li>
+<li><pre><code>基本功能演示
+
+boolean add(E e)
+boolean remove(Object o)
+void clear()
+boolean contains(Object o)
+boolean isEmpty()
+int size()
+</code></pre></li>
+<li><p>B:注意:</p>
+</li>
+<li><pre><code>collectionXxx.java使用了未经检查或不安全的操作.
+注意:要了解详细信息,请使用 -Xlint:unchecked重新编译.
+java编译器认为该程序存在安全隐患
+温馨提示:这不是编译失败,所以先不用理会,等学了泛型你就知道了
+</code></pre></li>
+</ul>
+<h3 id="08-04-集合框架-集合的遍历之集合转数组遍历"><a href="#08-04-集合框架-集合的遍历之集合转数组遍历" class="headerlink" title="08.04_集合框架(集合的遍历之集合转数组遍历)"></a>08.04_集合框架(集合的遍历之集合转数组遍历)</h3><ul>
+<li>A:集合的遍历<ul>
+<li>其实就是依次获取集合中的每一个元素。</li>
+</ul>
+</li>
+<li><p>B:案例演示</p>
+<ul>
+<li>把集合转成数组，可以实现集合的遍历</li>
+<li><p>toArray()<br>*</p>
+<pre><code>Collection coll = new ArrayList();
+coll.add(new Student(&quot;张三&quot;,23));        //Object obj = new Student(&quot;张三&quot;,23);
+coll.add(new Student(&quot;李四&quot;,24));
+coll.add(new Student(&quot;王五&quot;,25));
+coll.add(new Student(&quot;赵六&quot;,26));
+
+Object[] arr = coll.toArray();                //将集合转换成数组
+for (int i = 0; i &lt; arr.length; i++) {
+    Student s = (Student)arr[i];            //强转成Student
+    System.out.println(s.getName() + &quot;,&quot; + s.getAge());
+}
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h3 id="08-05-集合框架-Collection集合的带All功能测试"><a href="#08-05-集合框架-Collection集合的带All功能测试" class="headerlink" title="08.05_集合框架(Collection集合的带All功能测试)"></a>08.05_集合框架(Collection集合的带All功能测试)</h3><ul>
+<li>A:案例演示</li>
+<li><pre><code>带All的功能演示
+
+boolean addAll(Collection c)
+boolean removeAll(Collection c)
+boolean containsAll(Collection c)
+boolean retainAll(Collection c)
+</code></pre></li>
+</ul>
+<h3 id="08-06-集合框架-集合的遍历之迭代器遍历"><a href="#08-06-集合框架-集合的遍历之迭代器遍历" class="headerlink" title="08.06_集合框架(集合的遍历之迭代器遍历)"></a>08.06_集合框架(集合的遍历之迭代器遍历)</h3><ul>
+<li>A:迭代器概述<ul>
+<li>集合是用来存储元素,存储的元素需要查看,那么就需要迭代(遍历) </li>
+</ul>
+</li>
+<li><p>B:案例演示</p>
+<ul>
+<li><p>迭代器的使用</p>
+<pre><code>Collection c = new ArrayList();
+c.add(&quot;a&quot;);
+c.add(&quot;b&quot;);
+c.add(&quot;c&quot;);
+c.add(&quot;d&quot;);
+
+Iterator it = c.iterator();                        //获取迭代器的引用
+while(it.hasNext()) {                            //集合中的迭代方法(遍历)
+    System.out.println(it.next());
+}
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h3 id="08-07-集合框架-Collection存储自定义对象并遍历"><a href="#08-07-集合框架-Collection存储自定义对象并遍历" class="headerlink" title="08.07_集合框架(Collection存储自定义对象并遍历)"></a>08.07_集合框架(Collection存储自定义对象并遍历)</h3><ul>
+<li><p>A:案例演示</p>
+<ul>
+<li>Collection存储自定义对象并用迭代器遍历</li>
+<li><pre><code>Collection c = new ArrayList();
+
+c.add(new Student(&quot;张三&quot;,23));
+c.add(new Student(&quot;李四&quot;,24));
+c.add(new Student(&quot;王五&quot;,25));
+c.add(new Student(&quot;赵六&quot;,26));
+c.add(new Student(&quot;赵六&quot;,26));
+
+for(Iterator it = c.iterator();it.hasNext();) {
+    Student s = (Student)it.next();                        //向下转型
+    System.out.println(s.getName() + &quot;,&quot; + s.getAge());    //获取对象中的姓名和年龄
+}
+System.out.println(&quot;------------------------------&quot;);
+Iterator it = c.iterator();                                //获取迭代器
+while(it.hasNext()) {                                    //判断集合中是否有元素
+    //System.out.println(((Student)(it.next())).getName() + &quot;,&quot; + ((Student)(it.next())).getAge());
+    Student s = (Student)it.next();                        //向下转型
+    System.out.println(s.getName() + &quot;,&quot; + s.getAge());    //获取对象中的姓名和年龄
+}
+</code></pre><h3 id="08-08-集合框架-迭代器的原理及源码解析-了解"><a href="#08-08-集合框架-迭代器的原理及源码解析-了解" class="headerlink" title="08.08_集合框架(迭代器的原理及源码解析)(了解)"></a>08.08_集合框架(迭代器的原理及源码解析)(了解)</h3></li>
+</ul>
+</li>
+<li>A:迭代器原理<ul>
+<li>迭代器原理:迭代器是对集合进行遍历,而每一个集合内部的存储结构都是不同的,所以每一个集合存和取都是不一样,那么就需要在每一个类中定义hasNext()和next()方法,这样做是可以的,但是会让整个集合体系过于臃肿,迭代器是将这样的方法向上抽取出接口,然后在每个类的内部,定义自己迭代方式,这样做的好处有二,第一规定了整个集合体系的遍历方式都是hasNext()和next()方法,第二,代码有底层内部实现,使用者不用管怎么实现的,会用即可 </li>
+</ul>
+</li>
+<li>B:迭代器源码解析<ul>
+<li>1,在eclipse中ctrl + shift + t找到ArrayList类</li>
+<li>2,ctrl+o查找iterator()方法</li>
+<li>3,查看返回值类型是new Itr(),说明Itr这个类实现Iterator接口</li>
+<li>4,查找Itr这个内部类,发现重写了Iterator中的所有抽象方法 </li>
+</ul>
+</li>
+</ul>
+<h3 id="08-09-集合框架-List集合的特有功能概述和测试"><a href="#08-09-集合框架-List集合的特有功能概述和测试" class="headerlink" title="08.09_集合框架(List集合的特有功能概述和测试)"></a>08.09_集合框架(List集合的特有功能概述和测试)</h3><ul>
+<li>A:List集合的特有功能概述<ul>
+<li>void add(int index,E element)</li>
+<li>E remove(int index)</li>
+<li>E get(int index)</li>
+<li>E set(int index,E element)</li>
+</ul>
+</li>
+</ul>
+<h3 id="08-10-集合框架-List集合存储学生对象并遍历"><a href="#08-10-集合框架-List集合存储学生对象并遍历" class="headerlink" title="08.10_集合框架(List集合存储学生对象并遍历)"></a>08.10_集合框架(List集合存储学生对象并遍历)</h3><ul>
+<li><p>A:案例演示</p>
+<ul>
+<li><p>通过size()和get()方法结合使用遍历。</p>
+<pre><code>List list = new ArrayList();
+list.add(new Student(&quot;张三&quot;, 18));
+list.add(new Student(&quot;李四&quot;, 18));
+list.add(new Student(&quot;王五&quot;, 18));
+list.add(new Student(&quot;赵六&quot;, 18));
+
+for(int i = 0; i &lt; list.size(); i++) {
+    Student s = (Student)list.get(i);
+    System.out.println(s.getName() + &quot;,&quot; + s.getAge());
+}
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h3 id="08-11-集合框架-并发修改异常产生的原因及解决方案"><a href="#08-11-集合框架-并发修改异常产生的原因及解决方案" class="headerlink" title="08.11_集合框架(并发修改异常产生的原因及解决方案)"></a>08.11_集合框架(并发修改异常产生的原因及解决方案)</h3><ul>
+<li><p>A:案例演示</p>
+<ul>
+<li><p>需求：我有一个集合，请问，我想判断里面有没有”world”这个元素，如果有，我就添加一个”javaee”元素，请写代码实现。</p>
+<pre><code>List list = new ArrayList();
+list.add(&quot;a&quot;);
+list.add(&quot;b&quot;);
+list.add(&quot;world&quot;);
+list.add(&quot;d&quot;);
+list.add(&quot;e&quot;);
+
+/*Iterator it = list.iterator();
+while(it.hasNext()) {
+    String str = (String)it.next();
+    if(str.equals(&quot;world&quot;)) {
+        list.add(&quot;javaee&quot;);            //这里会抛出ConcurrentModificationException并发修改异常
+    }
+}*/
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>B:ConcurrentModificationException出现<ul>
+<li>迭代器遍历，集合修改集合</li>
+</ul>
+</li>
+<li><p>C:解决方案</p>
+<ul>
+<li>a:迭代器迭代元素，迭代器修改元素(ListIterator的特有功能add)</li>
+<li><p>b:集合遍历元素，集合修改元素</p>
+<pre><code>ListIterator lit = list.listIterator();        //如果想在遍历的过程中添加元素,可以用ListIterator中的add方法
+while(lit.hasNext()) {
+    String str = (String)lit.next();
+    if(str.equals(&quot;world&quot;)) {
+        lit.add(&quot;javaee&quot;);    
+        //list.add(&quot;javaee&quot;);
+    }
+}
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h3 id="08-12-集合框架-ListIterator-了解"><a href="#08-12-集合框架-ListIterator-了解" class="headerlink" title="08.12_集合框架(ListIterator)(了解)"></a>08.12_集合框架(ListIterator)(了解)</h3><ul>
+<li>boolean hasNext()是否有下一个</li>
+<li>boolean hasPrevious()是否有前一个</li>
+<li>Object next()返回下一个元素</li>
+<li>Object previous();返回上一个元素</li>
+</ul>
+<h3 id="08-13-集合框架-Vector的特有功能"><a href="#08-13-集合框架-Vector的特有功能" class="headerlink" title="08.13_集合框架(Vector的特有功能)"></a>08.13_集合框架(Vector的特有功能)</h3><ul>
+<li>A:Vector类概述</li>
+<li>B:Vector类特有功能<ul>
+<li>public void addElement(E obj)</li>
+<li>public E elementAt(int index)</li>
+<li>public Enumeration elements()</li>
+</ul>
+</li>
+<li><p>C:案例演示    </p>
+<ul>
+<li><p>Vector的迭代</p>
+<pre><code>Vector v = new Vector();                //创建集合对象,List的子类
+v.addElement(&quot;a&quot;);
+v.addElement(&quot;b&quot;);
+v.addElement(&quot;c&quot;);
+v.addElement(&quot;d&quot;);
+
+//Vector迭代
+Enumeration en = v.elements();            //获取枚举
+while(en.hasMoreElements()) {            //判断集合中是否有元素
+    System.out.println(en.nextElement());//获取集合中的元素
+}
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h3 id="08-14-集合框架-数据结构之数组和链表"><a href="#08-14-集合框架-数据结构之数组和链表" class="headerlink" title="08.14_集合框架(数据结构之数组和链表)"></a>08.14_集合框架(数据结构之数组和链表)</h3><ul>
+<li>A:数组<ul>
+<li>查询快修改也快</li>
+<li>增删慢</li>
+</ul>
+</li>
+<li>B:链表<ul>
+<li>查询慢,修改也慢</li>
+<li>增删快</li>
+</ul>
+</li>
+</ul>
+<h3 id="08-15-集合框架-List的三个子类的特点"><a href="#08-15-集合框架-List的三个子类的特点" class="headerlink" title="08.15_集合框架(List的三个子类的特点)"></a>08.15_集合框架(List的三个子类的特点)</h3><ul>
+<li>A:List的三个子类的特点</li>
+<li><pre><code>ArrayList:
+    底层数据结构是数组，查询快，增删慢。
+    线程不安全，效率高。
+Vector:
+    底层数据结构是数组，查询快，增删慢。
+    线程安全，效率低。
+Vector相对ArrayList查询慢(线程安全的)
+Vector相对LinkedList增删慢(数组结构)
+LinkedList:
+    底层数据结构是链表，查询慢，增删快。
+    线程不安全，效率高。
+
+Vector和ArrayList的区别
+    Vector是线程安全的,效率低
+    ArrayList是线程不安全的,效率高
+共同点:都是数组实现的
+ArrayList和LinkedList的区别
+    ArrayList底层是数组结果,查询和修改快
+    LinkedList底层是链表结构的,增和删比较快,查询和修改比较慢
+共同点:都是线程不安全的
+</code></pre></li>
+<li>B:List有三个儿子，我们到底使用谁呢?<pre><code>查询多用ArrayList
+增删多用LinkedList
+如果都多ArrayList
+</code></pre><h3 id="08-16-集合框架-去除ArrayList中重复字符串元素方式"><a href="#08-16-集合框架-去除ArrayList中重复字符串元素方式" class="headerlink" title="08.16_集合框架(去除ArrayList中重复字符串元素方式)"></a>08.16_集合框架(去除ArrayList中重复字符串元素方式)</h3></li>
+<li><p>A:案例演示</p>
+<ul>
+<li>需求：ArrayList去除集合中字符串的重复值(字符串的内容相同)</li>
+<li><p>思路：创建新集合方式</p>
+<pre><code>/**
+ *  A:案例演示
+ * 需求：ArrayList去除集合中字符串的重复值(字符串的内容相同)
+ * 思路：创建新集合方式
+ */
+public static void main(String[] args) {
+    ArrayList list = new ArrayList();
+    list.add(&quot;a&quot;);
+    list.add(&quot;a&quot;);
+    list.add(&quot;b&quot;);
+    list.add(&quot;b&quot;);
+    list.add(&quot;b&quot;);
+    list.add(&quot;c&quot;);
+    list.add(&quot;c&quot;);
+    list.add(&quot;c&quot;);
+    list.add(&quot;c&quot;);
+
+    System.out.println(list);
+    ArrayList newList = getSingle(list);
+    System.out.println(newList);
+}
+
+/*
+ * 去除重复
+ * 1,返回ArrayList
+ * 2,参数列表ArrayList
+ */
+public static ArrayList getSingle(ArrayList list) {
+    ArrayList newList = new ArrayList();            //创建一个新集合
+    Iterator it = list.iterator();                    //获取迭代器
+    while(it.hasNext()) {                            //判断老集合中是否有元素
+        String temp = (String)it.next();            //将每一个元素临时记录住
+        if(!newList.contains(temp)) {                //如果新集合中不包含该元素
+            newList.add(temp);                        //将该元素添加到新集合中
+        }
+    }
+    return newList;                                    //将新集合返回
+}
+</code></pre></li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/04/Java复习第七天/" rel="next" title="Java复习第七天">
+                <i class="fa fa-chevron-left"></i> Java复习第七天
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2017/05/05/Java复习第八天/"
+     data-title="Java复习第八天"
+     data-content=""
+     data-url="http://yoursite.com/2017/05/05/Java复习第八天/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/05/05/Java复习第八天/"
+           data-title="Java复习第八天" data-url="http://yoursite.com/2017/05/05/Java复习第八天/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="小樊同学" />
+          <p class="site-author-name" itemprop="name">小樊同学</p>
+          <p class="site-description motion-element" itemprop="description">我不管,我最帅哈哈哈哈哈</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/fanhc" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/201253404?refer_flag=1001030201_&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java复习第八天"><span class="nav-number">1.</span> <span class="nav-text">Java复习第八天</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#08-01-集合框架-对象数组的概述和使用"><span class="nav-number">1.1.</span> <span class="nav-text">08.01_集合框架(对象数组的概述和使用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-02-集合框架-集合的由来及集合继承体系图"><span class="nav-number">1.2.</span> <span class="nav-text">08.02_集合框架(集合的由来及集合继承体系图)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-03-集合框架-Collection集合的基本功能测试"><span class="nav-number">1.3.</span> <span class="nav-text">08.03_集合框架(Collection集合的基本功能测试)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-04-集合框架-集合的遍历之集合转数组遍历"><span class="nav-number">1.4.</span> <span class="nav-text">08.04_集合框架(集合的遍历之集合转数组遍历)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-05-集合框架-Collection集合的带All功能测试"><span class="nav-number">1.5.</span> <span class="nav-text">08.05_集合框架(Collection集合的带All功能测试)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-06-集合框架-集合的遍历之迭代器遍历"><span class="nav-number">1.6.</span> <span class="nav-text">08.06_集合框架(集合的遍历之迭代器遍历)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-07-集合框架-Collection存储自定义对象并遍历"><span class="nav-number">1.7.</span> <span class="nav-text">08.07_集合框架(Collection存储自定义对象并遍历)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-08-集合框架-迭代器的原理及源码解析-了解"><span class="nav-number">1.8.</span> <span class="nav-text">08.08_集合框架(迭代器的原理及源码解析)(了解)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-09-集合框架-List集合的特有功能概述和测试"><span class="nav-number">1.9.</span> <span class="nav-text">08.09_集合框架(List集合的特有功能概述和测试)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-10-集合框架-List集合存储学生对象并遍历"><span class="nav-number">1.10.</span> <span class="nav-text">08.10_集合框架(List集合存储学生对象并遍历)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-11-集合框架-并发修改异常产生的原因及解决方案"><span class="nav-number">1.11.</span> <span class="nav-text">08.11_集合框架(并发修改异常产生的原因及解决方案)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-12-集合框架-ListIterator-了解"><span class="nav-number">1.12.</span> <span class="nav-text">08.12_集合框架(ListIterator)(了解)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-13-集合框架-Vector的特有功能"><span class="nav-number">1.13.</span> <span class="nav-text">08.13_集合框架(Vector的特有功能)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-14-集合框架-数据结构之数组和链表"><span class="nav-number">1.14.</span> <span class="nav-text">08.14_集合框架(数据结构之数组和链表)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-15-集合框架-List的三个子类的特点"><span class="nav-number">1.15.</span> <span class="nav-text">08.15_集合框架(List的三个子类的特点)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#08-16-集合框架-去除ArrayList中重复字符串元素方式"><span class="nav-number">1.16.</span> <span class="nav-text">08.16_集合框架(去除ArrayList中重复字符串元素方式)</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小樊同学</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"fanhc"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
